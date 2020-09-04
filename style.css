@@ -3,6 +3,7 @@
 
 body {
   font-family: 'Roboto Condensed', serif;
+  background-color: #f4f5f6;
 }
 
 * {
@@ -11,6 +12,11 @@ body {
 
 body a, body p {
   font-family: 'Roboto Condensed', serif;
+}
+
+.max-width-container {
+  max-width: 1310px;
+  margin: 0 auto;
 }
 
 .orange-bc {
@@ -24,11 +30,21 @@ body a, body p {
   color: black;
 }
 
+.bottom-header ul a {
+  text-decoration: none;
+  color: gray;
+}
+
 /* HOVERS */
 
 .middle-header ul a:hover{
   color: #f72210;
 }
+
+.bottom-header ul a:hover{
+    color: #f72210;
+  }
+
 
 /* HEADER */
 
@@ -60,6 +76,7 @@ body a, body p {
 .top-right-header .subscribe {
   background-color: #ffe400;
   font-size: 13px;
+  min-width: 88px;
 }
 
 .top-right-header .subscribe i {
@@ -98,7 +115,7 @@ body a, body p {
 
 .middle-header ul li .seperation {
   height: 19px;
-  border-left: 1px solid gray;
+  border-left: 1px solid lightgray;
 }
 
 .search-input input{
@@ -108,6 +125,18 @@ body a, body p {
 
 ::placeholder {
   font-family: arial;
+}
+
+/* BOTTOM HEADER */
+
+.bottom-header ul {
+  padding: 12px 0;
+  border-color: lightgray;
+  border-width: 3px;
+}
+
+.bottom-header li {
+  margin-left: 33px;
 }
 
 
