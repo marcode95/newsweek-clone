@@ -24,6 +24,12 @@ body a, body p {
   color: black;
 }
 
+/* HOVERS */
+
+.middle-header ul a:hover{
+  color: #f72210;
+}
+
 /* HEADER */
 
 /* TOP HEADER */
@@ -60,20 +66,50 @@ body a, body p {
   font-size: 13px;
 }
 
+.rectangle {
+  top: 95px;
+  right: 0;
+  width: 67px;
+  height: 13px;
+  background: #f72210;
+}
+
+.triangle {
+  top: 95px;
+  right: 67px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid #f72210;
+  border-left: 13px solid transparent;
+}
+
 /* MIDDLE HEADER */
 
 .middle-header ul{
-  margin-right: 70px;
+  margin-right: 85px;
   font-size: 19px;
+  height: 55px;
 }
 
-.search-input{
-    border: 1px solid blue;
+.middle-header ul li{
+  display: flex;
+  align-items: center;
+}
+
+.middle-header ul li .seperation {
+  height: 19px;
+  border-left: 1px solid gray;
 }
 
 .search-input input{
   width: 70px;
+  border: transparent;
 }
+
+::placeholder {
+  font-family: arial;
+}
+
 
 /* MEDIA QUERY */
 
