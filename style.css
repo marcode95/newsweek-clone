@@ -1,0 +1,118 @@
+
+/* GLOBAL */
+
+body {
+  font-family: 'Roboto Condensed', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body a, body p {
+  font-family: 'Roboto Condensed', serif;
+}
+
+.orange-bc {
+ background-color: #f72210;
+}
+
+/* LINKS */
+
+.middle-header ul a{
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+
+/* TOP HEADER */
+
+.top-header {
+  height: 50px;
+}
+
+.top-left-header {
+  height: 60%;
+  font-size: 15px;
+}
+
+.date {
+  font-family: arial;
+}
+
+.newsweek-icon {
+  width: 132px;
+  filter: invert(1);
+}
+
+.top-right-header i {
+  opacity: 0.7;
+  font-size: 19px;
+}
+
+.top-right-header .subscribe {
+  background-color: #ffe400;
+  font-size: 13px;
+}
+
+.top-right-header .subscribe i {
+  font-size: 13px;
+}
+
+/* MIDDLE HEADER */
+
+.middle-header ul{
+  margin-right: 70px;
+  font-size: 19px;
+}
+
+.search-input{
+    border: 1px solid blue;
+}
+
+.search-input input{
+  width: 70px;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 767px) {
+
+/* HEADER */
+
+  .top-right-header {
+    font-size: 18px;  
+  }
+
+  .top-right-header i {
+    font-size: 26px;
+  }
+
+  .top-right-header .subscribe {
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+/* HEADER */
+
+  .top-header {
+    height: 95px;
+  }
+
+  .newsweek-icon {
+    width: 395px;
+  }
+
+  .top-right-header i {
+    font-size: 26px;
+  }
+
+  .top-right-header .subscribe {
+    font-size: 18px;
+  }
+
+}
