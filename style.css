@@ -7,6 +7,8 @@ body {
 }
 
 * {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
   box-sizing: border-box;
 }
 
@@ -58,6 +60,11 @@ body h2 a {
   color: #f72210;
 }
 
+.the-debate a {
+  color: black;
+  text-decoration: none;
+}
+
 /* HOVERS */
 
 body h2 a:hover {
@@ -74,6 +81,9 @@ body h2 a:hover {
   color: #f72210;
 }
 
+.the-debate-link:hover {
+  border-bottom: 1px solid #f72210;
+}
 
 /* HEADER */
 
@@ -170,6 +180,13 @@ body h2 a:hover {
 
 /* MAIN/SHOWCASE */
 
+main section {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
 /* TOP STORY */
 
 .heading-rectangle {
@@ -184,6 +201,40 @@ body h2 a:hover {
   line-height: 18px;
   font-family: Arial,Helvetica,sans-serif;
   margin-top: 10px;
+}
+
+/* THE DEBATE */
+
+.the-debate-thick-line {
+  border-bottom: 4px solid #d9d9d9;
+}
+
+.the-debate-pic {
+  width: 63px;
+}
+
+.the-debate-thin-lines {
+  height: 3px;
+}
+
+.the-debate-description p {
+  font-family: arial;
+  font-size: 14px;
+  color: #555;
+}
+
+.the-debate-description span {
+  font-family: 'Roboto Condensed', serif;
+  color: black;
+}
+
+.the-debate-circle {
+  width: 33px;
+  height: 33px; 
+  background-color: black;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  top: 126px;
 }
 
 /* MEDIA QUERY */
