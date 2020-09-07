@@ -32,6 +32,7 @@ body h3 {
 body h4 {
   font-family: 'Roboto Condensed', serif;
   color: black;
+  line-height: 20px;
 }
 
 .max-width-container {
@@ -41,6 +42,10 @@ body h4 {
 
 .orange-bc {
  background-color: #f72210;
+}
+
+input[type="email"] {
+  font-family: arial;
 }
 
 /* LINKS */
@@ -70,6 +75,16 @@ body h2 a {
   text-decoration: none;
 }
 
+.more-stories a {
+  color: black;
+  text-decoration: none;
+}
+
+.free-sign-up-button {
+  text-decoration: none;
+  color: black;
+}
+
 /* HOVERS */
 
 body h2 a:hover {
@@ -88,6 +103,17 @@ body h2 a:hover {
 
 .the-debate-link:hover {
   border-bottom: 1px solid #f72210;
+  color: black;
+  text-decoration: none;
+}
+
+.more-stories a:hover {
+  border-bottom: 1px solid #f72210;
+  color: black;
+  text-decoration: none;
+}
+
+.free-sign-up-button:hover {
   color: black;
   text-decoration: none;
 }
@@ -217,6 +243,13 @@ main section {
   height: 95px;
 }
 
+/* TOP STORY - MY TURN*/
+
+.my-turn h4,
+.culture-travel h4 {
+  color: rgba(3,3,3,.4);
+}
+
 /* THE DEBATE */
 
 .the-debate-thick-line {
@@ -255,6 +288,33 @@ main section {
 
 .opinion {
   padding-bottom: 0;
+}
+
+/* THE DEBATE - SIGN UP*/
+
+.sign-up-rectangle {
+  width: 300px;
+  height: 167px;
+  background-color: #f4f5f6;
+}
+
+.sign-up h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.n-icon {
+  width: 29px;
+  height: 29px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+}
+
+.sign-up-input {
+  height: 35px;
+}
+
+.free-sign-up-button {
+  height: 32px;
 }
 
 /* MEDIA QUERY */
