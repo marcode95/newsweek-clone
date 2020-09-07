@@ -44,8 +44,16 @@ body h4 {
  background-color: #f72210;
 }
 
+.orange-color {
+  color: #f72210;
+}
+
 input[type="email"] {
   font-family: arial;
+}
+
+.text-decoration-none {
+  text-decoration: none;
 }
 
 /* LINKS */
@@ -85,6 +93,11 @@ body h2 a {
   color: black;
 }
 
+.in-the-magazine-description {
+  color: black;
+  text-decoration: none;
+}
+
 /* HOVERS */
 
 body h2 a:hover {
@@ -116,6 +129,17 @@ body h2 a:hover {
 .free-sign-up-button:hover {
   color: black;
   text-decoration: none;
+}
+
+.magazine-section-headline a {
+  text-decoration: none;
+  color: #f72210;
+}
+
+.in-the-magazine-description:hover {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #f72210;
 }
 
 /* HEADER */
@@ -185,7 +209,7 @@ body h2 a:hover {
   align-items: center;
 }
 
-.middle-header ul li .seperation {
+.seperation {
   height: 19px;
   border-left: 1px solid lightgray;
 }
@@ -312,7 +336,8 @@ main section {
   background-color: #f4f5f6;
 }
 
-.sign-up h3 {
+.sign-up h3,
+.in-the-magazine-headline {
   font-size: 18px;
   color: #333;
 }
