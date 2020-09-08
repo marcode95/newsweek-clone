@@ -98,6 +98,12 @@ body h2 a {
   text-decoration: none;
 }
 
+footer a {
+  color: #666;
+  font-family: arial;
+  font-size: 14px;
+}
+
 /* HOVERS */
 
 body h2 a:hover {
@@ -140,6 +146,15 @@ body h2 a:hover {
   color: black;
   text-decoration: none;
   border-bottom: 1px solid #f72210;
+}
+
+.top-footer-right i:hover {
+  color: rgb(69, 69, 252);
+}
+
+footer a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 /* HEADER */
@@ -356,6 +371,70 @@ main section {
   height: 32px;
 }
 
+/* SUBSCRIBE NEWSLETTER */
+
+.subscribe-box {
+  height: 362px;
+  background-color: #f4f5f6;
+  z-index: -2;
+}
+
+.subscribe-box p,
+.newsletter-box p {
+  font-family: helvetica;
+  line-height: 22px;
+  z-index: 1;
+}
+
+.subscribe-box-pic-1 {
+  top: 24px;
+  left: 34%;
+  z-index: -1;
+}
+
+.subscribe-box-pic-2 {
+  top: 38px;
+  left: 45%;
+  z-index: -1;
+}
+
+.newsletter-box {
+  height: 213px;
+}
+
+.newsletter-button {
+  height: 40px;
+  padding-top: 13px;
+}
+
+.newsletter-input {
+  height: 40px;
+}
+
+/* SUBSCRIBE NEWSLETTER */
+
+.top-footer-left svg {
+  width: 236px;
+}
+
+.top-footer-left p {
+  font-family: arial;
+  font-size: 12px;
+}
+
+.top-footer-right i{
+  font-size: 30px;
+  color: rgb(92, 92, 92);
+}
+
+.bottom-footer {
+  line-height: 25px;
+}
+
+.bottom-footer-top p {
+  color: #666;
+}
+
 /* MEDIA QUERY */
 
 @media only screen and (min-width: 767px) {
@@ -408,6 +487,38 @@ main section {
     border-bottom: transparent;
   }
 
+  /* SUBSCRIBE NEWSLETTER */
+
+  .subscribe-box {
+    height: 300px;
+  }
+
+  .subscribe-box-pic-1 {
+    top: 34px;
+    left: 34px;
+    z-index: -1;
+  }
+
+  .subscribe-box-pic-2 {
+    top: 48px;
+    left: 120px;
+    z-index: -1;
+  }
+
+  .subscribe-box-text {
+    margin-left: 300px;
+  }
+
+  .newsletter-box {
+    height: 254px;
+  }
+
+  .newsletter-bg-img {
+    height: 100%;
+    width: 191px;
+    background: rgba(0, 0, 0, 0) url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") no-repeat scroll center center / cover;
+  }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -428,6 +539,29 @@ main section {
 
   .top-right-header .subscribe {
     font-size: 18px;
+  }
+
+/* SUBSCRIBE NEWSLETTER */
+
+  .subscribe-newsletter {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .subscribe-box {
+    height: 317px;
+  }
+
+  .newsletter-box {
+    height: 317px;
+  }
+
+  .newsletter-box-right {
+    max-width: 43%;
+  }
+
+  .newsletter-bg-img {
+    width: 50%;
   }
 
 }
