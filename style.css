@@ -1,35 +1,35 @@
-
 /* GLOBAL */
 
 body {
-  font-family: 'Roboto Condensed', serif;
+  font-family: "Roboto Condensed", serif;
 }
 
 * {
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body a, body p {
-  font-family: 'Roboto Condensed', serif;
+body a,
+body p {
+  font-family: "Roboto Condensed", serif;
 }
 
 body h2 {
-  font-family: 'Roboto Condensed', serif;
+  font-family: "Roboto Condensed", serif;
   font-size: 18px;
   line-height: 24px;
   margin-top: 10px;
 }
 
 body h3 {
-  font-family: 'Roboto Condensed', serif;
-  color: rgba(3,3,3,.4);
+  font-family: "Roboto Condensed", serif;
+  color: rgba(3, 3, 3, 0.4);
   padding-bottom: 11px;
 }
 
 body h4 {
-  font-family: 'Roboto Condensed', serif;
+  font-family: "Roboto Condensed", serif;
   color: black;
   line-height: 20px;
 }
@@ -40,7 +40,7 @@ body h4 {
 }
 
 .orange-bc {
- background-color: #f72210;
+  background-color: #f72210;
 }
 
 .orange-color {
@@ -104,7 +104,7 @@ body h2 a:hover,
 }
 
 .middle-header ul a:hover,
-.bottom-header ul a:hover{
+.bottom-header ul a:hover {
   color: #f72210;
 }
 
@@ -182,13 +182,13 @@ header {
 
 /* MIDDLE HEADER */
 
-.middle-header ul{
+.middle-header ul {
   margin-right: 85px;
   font-size: 19px;
   height: 55px;
 }
 
-.middle-header ul li{
+.middle-header ul li {
   display: flex;
   align-items: center;
 }
@@ -198,7 +198,7 @@ header {
   border-left: 1px solid lightgray;
 }
 
-.search-input input{
+.search-input input {
   width: 70px;
   border: transparent;
 }
@@ -231,14 +231,14 @@ main section {
 .heading-rectangle {
   bottom: 0;
   left: 0;
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .article-subtext {
   color: #333;
   font-size: 13px;
   line-height: 18px;
-  font-family: Arial,Helvetica,sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 10px;
 }
 
@@ -248,7 +248,7 @@ main section {
   border-bottom: 1px solid lightgray;
 }
 
-.more-stories img{
+.more-stories img {
   width: 95px;
   height: 95px;
 }
@@ -257,7 +257,7 @@ main section {
 
 .my-turn h4,
 .culture-travel h4 {
-  color: rgba(3,3,3,.4);
+  color: rgba(3, 3, 3, 0.4);
 }
 
 /* THE DEBATE */
@@ -285,13 +285,13 @@ main section {
 }
 
 .the-debate-description span {
-  font-family: 'Roboto Condensed', serif;
+  font-family: "Roboto Condensed", serif;
   color: black;
 }
 
 .the-debate-circle {
   width: 33px;
-  height: 33px; 
+  height: 33px;
   background-color: black;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -314,7 +314,8 @@ main section {
 .n-icon {
   width: 29px;
   height: 29px;
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+    no-repeat #f72210;
 }
 
 .sign-up-input {
@@ -385,7 +386,7 @@ main section {
   font-size: 12px;
 }
 
-.top-footer-right i{
+.top-footer-right i {
   font-size: 30px;
   color: rgb(92, 92, 92);
 }
@@ -405,7 +406,6 @@ main section {
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 450px) {
-
   .subscribe-box {
     height: 400px;
   }
@@ -419,7 +419,7 @@ main section {
     left: 16%;
     z-index: 0;
   }
-  
+
   .subscribe-box-pic-2 {
     top: 38px;
     left: 24%;
@@ -428,17 +428,16 @@ main section {
 }
 
 @media only screen and (min-width: 768px) {
-
-/* GLOBAL */
+  /* GLOBAL */
 
   body h2 {
     font-size: 22px;
   }
 
-/* HEADER */
+  /* HEADER */
 
   .top-right-header {
-    font-size: 18px;  
+    font-size: 18px;
   }
 
   .top-right-header i {
@@ -449,13 +448,13 @@ main section {
     font-size: 18px;
   }
 
-/* FEATURED STORIES */
+  /* FEATURED STORIES */
 
   .featured-stories-container {
     border-bottom: transparent;
   }
 
-/* TOP STORY */
+  /* TOP STORY */
 
   .top-story {
     border-bottom: transparent;
@@ -465,7 +464,7 @@ main section {
     border-bottom: transparent;
   }
 
-/* MAGAZINE/EDITORS PICK */
+  /* MAGAZINE/EDITORS PICK */
 
   .in-the-magazine-description {
     font-size: 20px;
@@ -479,13 +478,13 @@ main section {
     font-size: 15px;
   }
 
-/* USA NEWS */
+  /* USA NEWS */
 
   .usa-smaller-headline {
     font-size: 22px;
   }
 
-/* SUBSCRIBE NEWSLETTER */
+  /* SUBSCRIBE NEWSLETTER */
 
   .subscribe-box {
     height: 300px;
@@ -512,14 +511,14 @@ main section {
   .newsletter-bg-img {
     height: 100%;
     width: 191px;
-    background: rgba(0, 0, 0, 0) url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0)
+      url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5")
+      no-repeat scroll center center / cover;
   }
-
 }
 
 @media only screen and (min-width: 992px) {
-
-/* HEADER */
+  /* HEADER */
 
   .top-header {
     height: 95px;
@@ -537,7 +536,7 @@ main section {
     font-size: 18px;
   }
 
-/* SUBSCRIBE NEWSLETTER */
+  /* SUBSCRIBE NEWSLETTER */
 
   .subscribe-newsletter {
     display: grid;
@@ -559,5 +558,4 @@ main section {
   .newsletter-bg-img {
     width: 50%;
   }
-
 }

@@ -1,100 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsweek</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-    <script
-        src="https://kit.fontawesome.com/9a2f12287f.js"
-        crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9a2f12287f.js" crossorigin="anonymous">
     </script>
 </head>
+
 <body class="grayish-bg-color">
 
-        <!-- header-->
+    <!-- header-->
 
-        <header class="mx-auto bg-white">
+    <header class="mx-auto bg-white">
 
-            <!-- top header-->
+        <!-- top header-->
 
-            <div class="top-header orange-bc d-flex justify-content-between align-items-center position-relative">
-                <div class="top-left-header d-none d-lg-flex flex-column justify-content-around ml-4">
-                    <a class="weather-data text-decoration-none text-white" href="#">
-                        <i class="fas fa-icicles"></i>
-                        <span> &nbsp; -75° &nbsp; Mars, Solar System</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <p class="date text-white">
-                        Fri, Sep 04, 2020
-                    </p>
-                </div>
-                <div class="top-middle-header">
-                    <a href="#">
-                        <svg class="newsweek-icon ml-3" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
-                            <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-                <div class="top-right-header d-flex align-items-center mt-lg-4">
-                    <i class="fas fa-user text-white d-md-none ml-2"></i>
-                    <a href="#" class="d-none d-md-inline text-white text-decoration-none">LOGIN</a>
-                    <a href="#" class="subscribe text-body rounded-pill mx-2 px-2 py-1 text-decoration-none mx-md-4 px-md-3">SUBSCRIBE <span><i class="fas fa-chevron-right"></i></span></a>
-                    <i class="fas fa-bars text-white mr-3 d-lg-none"></i>
-                </div>
-                <div class="rectangle orange-bc position-absolute d-none d-lg-inline"></div>
-                <div class="triangle position-absolute d-none d-lg-inline"></div>
+        <div class="top-header orange-bc d-flex justify-content-between align-items-center position-relative">
+            <div class="top-left-header d-none d-lg-flex flex-column justify-content-around ml-4">
+                <a class="weather-data text-decoration-none text-white" href="#">
+                    <i class="fas fa-icicles"></i>
+                    <span> &nbsp; -75° &nbsp; Mars, Solar System</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <p class="date text-white">
+                    Fri, Sep 04, 2020
+                </p>
             </div>
-
-            <!-- middle header-->
-
-            <div class="middle-header d-none d-lg-inline">
-                <ul class="d-flex justify-content-between align-items-center ml-2">
-                    <li><a href="#">U.S.</a></li>
-                    <li><div class="seperation"></div></li>
-                    <li><a href="#">World</a></li>
-                    <li><div class="seperation"></div></li>
-                    <li><a href="#">Business</a></li>
-                    <li><div class="seperation"></div></li>
-                    <li><a href="#">Tech & Science</a></li>
-                    <li><div class="seperation"></div></li>
-                    <li><a href="#">Culture</a></li>
-                    <li><div class="seperation"></div></li>
-                    <li><a href="#">Newsgeek</a></li>
-                    <li><div class="seperation"></div></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><div class="seperation"></div></li>
-                    <li><a href="#">Health</a></li>
-                    <li><div class="seperation"></div></li>
-                    <li><a href="#">The Debate</a></li>
-                    <li><div class="seperation"></div></li>
-                    <li><a href="#">Vantage</a></li>
-                    <li><div class="seperation"></div></li>
-                    <li><a href="#">Weather</a></li>
-                    <li class="search-input">
-                        <input type="search" placeholder="Search">
-                        <i class="fas fa-search"></i>
-                    </li>
-                </ul>
+            <div class="top-middle-header">
+                <a href="#">
+                    <svg class="newsweek-icon ml-3" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                        style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+                        <g>
+                            <path class="st0"
+                                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
             </div>
-
-            <!-- bottom header-->
-
-            <div class="bottom-header d-none d-lg-inline">
-                <ul class="d-flex border-top border-bottom"> 
-                    <li><p>TRENDING</p></li>
-                    <li><a href="#">DONALD TRUMP</a></li>
-                    <li><a href="#">JOE BIDEN</a></li>
-                    <li><a href="#">CHINA</a></li>
-                    <li><a href="#">CORONAVIRUS</a></li>
-                    <li><a href="#">2020 ELECTION</a></li>
-                </ul>
+            <div class="top-right-header d-flex align-items-center mt-lg-4">
+                <i class="fas fa-user text-white d-md-none ml-2"></i>
+                <a href="#" class="d-none d-md-inline text-white text-decoration-none">LOGIN</a>
+                <a href="#"
+                    class="subscribe text-body rounded-pill mx-2 px-2 py-1 text-decoration-none mx-md-4 px-md-3">SUBSCRIBE
+                    <span><i class="fas fa-chevron-right"></i></span></a>
+                <i class="fas fa-bars text-white mr-3 d-lg-none"></i>
             </div>
-        </header>
+            <div class="rectangle orange-bc position-absolute d-none d-lg-inline"></div>
+            <div class="triangle position-absolute d-none d-lg-inline"></div>
+        </div>
+
+        <!-- middle header-->
+
+        <div class="middle-header d-none d-lg-inline">
+            <ul class="d-flex justify-content-between align-items-center ml-2">
+                <li><a href="#">U.S.</a></li>
+                <li>
+                    <div class="seperation"></div>
+                </li>
+                <li><a href="#">World</a></li>
+                <li>
+                    <div class="seperation"></div>
+                </li>
+                <li><a href="#">Business</a></li>
+                <li>
+                    <div class="seperation"></div>
+                </li>
+                <li><a href="#">Tech & Science</a></li>
+                <li>
+                    <div class="seperation"></div>
+                </li>
+                <li><a href="#">Culture</a></li>
+                <li>
+                    <div class="seperation"></div>
+                </li>
+                <li><a href="#">Newsgeek</a></li>
+                <li>
+                    <div class="seperation"></div>
+                </li>
+                <li><a href="#">Sports</a></li>
+                <li>
+                    <div class="seperation"></div>
+                </li>
+                <li><a href="#">Health</a></li>
+                <li>
+                    <div class="seperation"></div>
+                </li>
+                <li><a href="#">The Debate</a></li>
+                <li>
+                    <div class="seperation"></div>
+                </li>
+                <li><a href="#">Vantage</a></li>
+                <li>
+                    <div class="seperation"></div>
+                </li>
+                <li><a href="#">Weather</a></li>
+                <li class="search-input">
+                    <input type="search" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </li>
+            </ul>
+        </div>
+
+        <!-- bottom header-->
+
+        <div class="bottom-header d-none d-lg-inline">
+            <ul class="d-flex border-top border-bottom">
+                <li>
+                    <p>TRENDING</p>
+                </li>
+                <li><a href="#">DONALD TRUMP</a></li>
+                <li><a href="#">JOE BIDEN</a></li>
+                <li><a href="#">CHINA</a></li>
+                <li><a href="#">CORONAVIRUS</a></li>
+                <li><a href="#">2020 ELECTION</a></li>
+            </ul>
+        </div>
+    </header>
 
     <!-- container for giving the whole page a max width of 1310px-->
 
@@ -111,12 +141,15 @@
                     <h3>TOP STORY</h3>
                     <div class="top-featured-story-image-container position-relative">
                         <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632891/trump.webp?w=591&h=364&f=f9f1085fc15697f2de24cc997aa90b15" alt="picture of donald trump">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632891/trump.webp?w=591&h=364&f=f9f1085fc15697f2de24cc997aa90b15"
+                                alt="picture of donald trump">
                         </a>
                         <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
                     </div>
                     <h2><a href="#">Trump trumpingly trumpens again - "Very trumpish" non-trumpers say</a></h2>
-                    <p class="article-subtext">Donald Trump trumpingly trumpens through trumpenstate during trumptime.</p>                
+                    <p class="article-subtext">Donald Trump trumpingly trumpens through trumpenstate during trumptime.
+                    </p>
                 </section>
 
                 <!-- grayish thick seperation line appearing several times on small screen -->
@@ -129,17 +162,23 @@
                     <h3>FEATURED STORIES</h3>
                     <div class="top-featured-story-image-container position-relative">
                         <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1631825/vladimir-putin-meets-about-covid-19-spread.jpg?w=591&h=364&f=71f194834332b30dbf6ddc170bdb6240" alt="picture of wladimir putin">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1631825/vladimir-putin-meets-about-covid-19-spread.jpg?w=591&h=364&f=71f194834332b30dbf6ddc170bdb6240"
+                                alt="picture of wladimir putin">
                         </a>
                         <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
                     </div>
-                    <h2><a href="#">Putin being very mean to western nations. "Very mean" western nation leaders say</a></h2>
-                    <p class="article-subtext">Wladimir Putin had to step outside the door for 5 minutes again after disturbing G7 meeting.</p>
+                    <h2><a href="#">Putin being very mean to western nations. "Very mean" western nation leaders say</a>
+                    </h2>
+                    <p class="article-subtext">Wladimir Putin had to step outside the door for 5 minutes again after
+                        disturbing G7 meeting.</p>
                 </section>
                 <section class="featured-stories pb-3">
                     <div class="top-featured-story-image-container position-relative">
                         <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632872/edward-snowden-donald-trump-russia-pardon-election.webp?w=397&h=265&q=90&f=b107e03942ab46169744b0d92cb30309" alt="picture of edward snowden">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632872/edward-snowden-donald-trump-russia-pardon-election.webp?w=397&h=265&q=90&f=b107e03942ab46169744b0d92cb30309"
+                                alt="picture of edward snowden">
                         </a>
                         <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
                     </div>
@@ -149,7 +188,9 @@
                 <section class="featured-stories pb-3">
                     <div class="top-featured-story-image-container position-relative">
                         <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632551/howie-hawkins.webp?w=397&h=265&l=50&t=50&q=90&f=d586acc5de4ec20a8951c34281d4740a" alt="guy with microphone">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632551/howie-hawkins.webp?w=397&h=265&l=50&t=50&q=90&f=d586acc5de4ec20a8951c34281d4740a"
+                                alt="guy with microphone">
                         </a>
                         <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
                     </div>
@@ -159,29 +200,35 @@
                 <section class="featured-stories pb-3">
                     <div class="top-featured-story-image-container position-relative">
                         <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632907/elon-musk.webp?w=397&h=265&q=90&f=c5609af196016801a562a99cd8634026" alt="picture of elon musk">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632907/elon-musk.webp?w=397&h=265&q=90&f=c5609af196016801a562a99cd8634026"
+                                alt="picture of elon musk">
                         </a>
                         <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
                     </div>
                     <h2><a href="#">Shocking! Elon Musk going completely bankrupt</a></h2>
-                    <p class="article-subtext">While Tesla is doing absolutely great Musk looses all his money after divorcing 7th wife.</p>
+                    <p class="article-subtext">While Tesla is doing absolutely great Musk looses all his money after
+                        divorcing 7th wife.</p>
                 </section>
                 <section class="featured-stories pb-3 pb-md-0">
                     <div class="top-featured-story-image-container position-relative">
                         <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632655/biden-trump-debate.webp?w=591&h=364&f=5a155aa106009c80bfc27f9dd20ae607" alt="picture of trump and biden">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632655/biden-trump-debate.webp?w=591&h=364&f=5a155aa106009c80bfc27f9dd20ae607"
+                                alt="picture of trump and biden">
                         </a>
                         <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
                     </div>
                     <h2><a href="#">Absolutely shocking and devastating - Donald Trump shocks world</a></h2>
-                    <p class="article-subtext">This is just our obligatory article about Donald Trump. Nothing really happened actually.. this is awkward</p>
+                    <p class="article-subtext">This is just our obligatory article about Donald Trump. Nothing really
+                        happened actually.. this is awkward</p>
                 </section>
             </article>
 
 
             <div class="thick-seperation-line w-100 border-top d-md-none"></div>
 
-            
+
             <!-- the debate container -->
 
             <article class="the-debate-container w-100 order-md-3 col-md-12 col-lg">
@@ -192,22 +239,31 @@
                     <h3 class="pb-0 mb-2">THE DEBATE</h3>
                     <div class="the-debate-thick-line mb-2"></div>
                     <div class="the-debate-pic-description-container d-flex align-items-center">
-                        <a href="#"><img class="the-debate-pic" src="https://d.newsweek.com/en/full/1595774/gordon-chang.webp?w=150&h=150&f=b09b792f02f0ce65c0441c6b8de296c7" alt="portrait of guy giving his opinion"></a>
+                        <a href="#"><img class="the-debate-pic"
+                                src="https://d.newsweek.com/en/full/1595774/gordon-chang.webp?w=150&h=150&f=b09b792f02f0ce65c0441c6b8de296c7"
+                                alt="portrait of guy giving his opinion"></a>
                         <div class="the-debate-description ml-3">
-                            <h4><a href="#" class="the-debate-link mb-2"><h4>Eating Pineapple Pizza is disgusting and should be punishable by law</a></h4>
-                            <p class="mt-2">BY <span>John Miller</span></p> 
+                            <h4><a href="#" class="the-debate-link mb-2">
+                                    <h4>Eating Pineapple Pizza is disgusting and should be punishable by law
+                                </a></h4>
+                            <p class="mt-2">BY <span>John Miller</span></p>
                         </div>
                     </div>
                     <div class="the-debate-thin-lines border-top border-bottom my-4"></div>
                     <div class="the-debate-pic-description-container d-flex justify-content-between align-items-center">
                         <div class="the-debate-description">
-                            <h4><a href="#" class="the-debate-link mb-2">I love Pineapple Pizza - also I drink dish soap and have an IQ of 83</a></h4>
-                            <p class="mt-2">BY <span>Mohn Jiller</span></p> 
+                            <h4><a href="#" class="the-debate-link mb-2">I love Pineapple Pizza - also I drink dish soap
+                                    and have an IQ of 83</a></h4>
+                            <p class="mt-2">BY <span>Mohn Jiller</span></p>
                         </div>
-                        <a href="#"><img class="the-debate-pic ml-3" src="https://d.newsweek.com/en/full/1632259/john-rosenthal.webp?w=150&h=150&f=9c59a76f3e45338098b049835c8b97b2" alt="portrait of guy giving his opinion"></a>
+                        <a href="#"><img class="the-debate-pic ml-3"
+                                src="https://d.newsweek.com/en/full/1632259/john-rosenthal.webp?w=150&h=150&f=9c59a76f3e45338098b049835c8b97b2"
+                                alt="portrait of guy giving his opinion"></a>
                     </div>
                     <div class="the-debate-thick-line mt-2"></div>
-                    <div class="the-debate-circle position-absolute rounded-circle p-2"><p class="the-debate-circle-text text-white">VS</p></div>
+                    <div class="the-debate-circle position-absolute rounded-circle p-2">
+                        <p class="the-debate-circle-text text-white">VS</p>
+                    </div>
                 </section>
 
                 <div class="thick-seperation-line w-100 border-top d-md-none"></div>
@@ -218,70 +274,98 @@
                     <section class="opinion pt-3 px-0">
                         <h3>OPINION</h3>
                         <div class="the-debate-pic-description-container d-flex align-items-center">
-                            <a href="#"><img class="the-debate-pic" src="https://d.newsweek.com/en/full/1632715/tomas-j-philipson.webp?w=63&h=63&f=71dea295bb700473c8e0e8306aab20dd" alt="portrait of guy giving his opinion"></a>
+                            <a href="#"><img class="the-debate-pic"
+                                    src="https://d.newsweek.com/en/full/1632715/tomas-j-philipson.webp?w=63&h=63&f=71dea295bb700473c8e0e8306aab20dd"
+                                    alt="portrait of guy giving his opinion"></a>
                             <div class="the-debate-description ml-3">
-                                <h4><a href="#" class="the-debate-link mb-2"><h4>Browsing Reddit doesn't make you a smart person</a></h4>
-                                <p class="mt-2">BY <span>Guy Dudeson</span></p> 
+                                <h4><a href="#" class="the-debate-link mb-2">
+                                        <h4>Browsing Reddit doesn't make you a smart person
+                                    </a></h4>
+                                <p class="mt-2">BY <span>Guy Dudeson</span></p>
                             </div>
                         </div>
                     </section>
                     <div class="opinion-seperator border-bottom my-2"></div>
                     <section class="opinion px-0">
                         <div class="the-debate-pic-description-container d-flex align-items-center">
-                            <a href="#"><img class="the-debate-pic" src="https://d.newsweek.com/en/full/1588218/joshua-sharf.webp?w=63&h=63&f=0760388da784989068841449a1d8d789" alt="portrait of guy giving his opinion"></a>
+                            <a href="#"><img class="the-debate-pic"
+                                    src="https://d.newsweek.com/en/full/1588218/joshua-sharf.webp?w=63&h=63&f=0760388da784989068841449a1d8d789"
+                                    alt="portrait of guy giving his opinion"></a>
                             <div class="the-debate-description ml-3">
-                                <h4><a href="#" class="the-debate-link mb-2"><h4>Parasite should be nominated again for the next Oscar's</a></h4>
-                                <p class="mt-2">BY <span>Dude Guyson</span></p> 
+                                <h4><a href="#" class="the-debate-link mb-2">
+                                        <h4>Parasite should be nominated again for the next Oscar's
+                                    </a></h4>
+                                <p class="mt-2">BY <span>Dude Guyson</span></p>
                             </div>
                         </div>
                     </section>
                     <div class="opinion-seperator border-bottom my-2"></div>
                     <section class="opinion px-0">
                         <div class="the-debate-pic-description-container d-flex align-items-center">
-                            <a href="#"><img class="the-debate-pic" src="https://d.newsweek.com/en/full/1632715/tomas-j-philipson.webp?w=63&h=63&f=71dea295bb700473c8e0e8306aab20dd" alt="portrait of guy giving his opinion"></a>
+                            <a href="#"><img class="the-debate-pic"
+                                    src="https://d.newsweek.com/en/full/1632715/tomas-j-philipson.webp?w=63&h=63&f=71dea295bb700473c8e0e8306aab20dd"
+                                    alt="portrait of guy giving his opinion"></a>
                             <div class="the-debate-description ml-3">
-                                <h4><a href="#" class="the-debate-link mb-2"><h4>Browsing Reddit doesn't make you a smart person</a></h4>
-                                <p class="mt-2">BY <span>Guy Dudeson</span></p> 
+                                <h4><a href="#" class="the-debate-link mb-2">
+                                        <h4>Browsing Reddit doesn't make you a smart person
+                                    </a></h4>
+                                <p class="mt-2">BY <span>Guy Dudeson</span></p>
                             </div>
                         </div>
                     </section>
                     <div class="opinion-seperator border-bottom my-2"></div>
                     <section class="opinion px-0">
                         <div class="the-debate-pic-description-container d-flex align-items-center">
-                            <a href="#"><img class="the-debate-pic" src="https://d.newsweek.com/en/full/1588218/joshua-sharf.webp?w=63&h=63&f=0760388da784989068841449a1d8d789" alt="portrait of guy giving his opinion"></a>
+                            <a href="#"><img class="the-debate-pic"
+                                    src="https://d.newsweek.com/en/full/1588218/joshua-sharf.webp?w=63&h=63&f=0760388da784989068841449a1d8d789"
+                                    alt="portrait of guy giving his opinion"></a>
                             <div class="the-debate-description ml-3">
-                                <h4><a href="#" class="the-debate-link mb-2"><h4>Parasite should be nominated again for the next Oscar's</a></h4>
-                                <p class="mt-2">BY <span>Dude Guyson</span></p> 
+                                <h4><a href="#" class="the-debate-link mb-2">
+                                        <h4>Parasite should be nominated again for the next Oscar's
+                                    </a></h4>
+                                <p class="mt-2">BY <span>Dude Guyson</span></p>
                             </div>
                         </div>
                     </section>
                     <div class="opinion-seperator border-bottom my-2"></div>
                     <section class="opinion px-0">
                         <div class="the-debate-pic-description-container d-flex align-items-center">
-                            <a href="#"><img class="the-debate-pic" src="https://d.newsweek.com/en/full/1632715/tomas-j-philipson.webp?w=63&h=63&f=71dea295bb700473c8e0e8306aab20dd" alt="portrait of guy giving his opinion"></a>
+                            <a href="#"><img class="the-debate-pic"
+                                    src="https://d.newsweek.com/en/full/1632715/tomas-j-philipson.webp?w=63&h=63&f=71dea295bb700473c8e0e8306aab20dd"
+                                    alt="portrait of guy giving his opinion"></a>
                             <div class="the-debate-description ml-3">
-                                <h4><a href="#" class="the-debate-link mb-2"><h4>Browsing Reddit doesn't make you a smart person</a></h4>
-                                <p class="mt-2">BY <span>Guy Dudeson</span></p> 
+                                <h4><a href="#" class="the-debate-link mb-2">
+                                        <h4>Browsing Reddit doesn't make you a smart person
+                                    </a></h4>
+                                <p class="mt-2">BY <span>Guy Dudeson</span></p>
                             </div>
                         </div>
                     </section>
                     <div class="opinion-seperator border-bottom my-2"></div>
                     <section class="opinion px-0">
                         <div class="the-debate-pic-description-container d-flex align-items-center">
-                            <a href="#"><img class="the-debate-pic" src="https://d.newsweek.com/en/full/1588218/joshua-sharf.webp?w=63&h=63&f=0760388da784989068841449a1d8d789" alt="portrait of guy giving his opinion"></a>
+                            <a href="#"><img class="the-debate-pic"
+                                    src="https://d.newsweek.com/en/full/1588218/joshua-sharf.webp?w=63&h=63&f=0760388da784989068841449a1d8d789"
+                                    alt="portrait of guy giving his opinion"></a>
                             <div class="the-debate-description ml-3">
-                                <h4><a href="#" class="the-debate-link mb-2"><h4>Parasite should be nominated again for the next Oscar's</a></h4>
-                                <p class="mt-2">BY <span>Dude Guyson</span></p> 
+                                <h4><a href="#" class="the-debate-link mb-2">
+                                        <h4>Parasite should be nominated again for the next Oscar's
+                                    </a></h4>
+                                <p class="mt-2">BY <span>Dude Guyson</span></p>
                             </div>
                         </div>
                     </section>
                     <div class="opinion-seperator border-bottom my-2"></div>
                     <section class="opinion px-0 pb-3">
                         <div class="the-debate-pic-description-container d-flex align-items-center">
-                            <a href="#"><img class="the-debate-pic" src="https://d.newsweek.com/en/full/1595774/gordon-chang.webp?w=150&h=150&f=b09b792f02f0ce65c0441c6b8de296c7" alt="portrait of guy giving his opinion"></a>
+                            <a href="#"><img class="the-debate-pic"
+                                    src="https://d.newsweek.com/en/full/1595774/gordon-chang.webp?w=150&h=150&f=b09b792f02f0ce65c0441c6b8de296c7"
+                                    alt="portrait of guy giving his opinion"></a>
                             <div class="the-debate-description ml-3">
-                                <h4><a href="#" class="the-debate-link mb-2"><h4>Quattro Formaggi with peperoni is the best</a></h4>
-                                <p class="mt-2">BY <span>John Miller</span></p> 
+                                <h4><a href="#" class="the-debate-link mb-2">
+                                        <h4>Quattro Formaggi with peperoni is the best
+                                    </a></h4>
+                                <p class="mt-2">BY <span>John Miller</span></p>
                             </div>
                         </div>
                     </section>
@@ -291,18 +375,19 @@
 
                 <!-- sign up appearing at bigger screen for maintaining order -->
 
-                
-                    <section class="sign-up d-none d-md-block mb-md-3 order-4 w-100 pb-0">
-                        <div class="sign-up-rectangle border mx-auto p-4 mt-4">
-                            <div class="sign-up-rectangle-header d-flex align-items-center mb-3">
-                                <div class="n-icon flex-shrink-0"></div>
-                                <h3 class="ml-2 pb-0">START YOUR DAY WITH OUR TOP 5 ARTICLES</h3>
-                            </div>
-                            <input class="sign-up-input border w-100 mb-2" type="email" placeholder="Email adress">
-                            <a class="free-sign-up-button d-block w-100 orange-bc py-2 text-center text-white" href="#">FREE SIGN UP <i class="fas fa-chevron-right"></i></a>
+
+                <section class="sign-up d-none d-md-block mb-md-3 order-4 w-100 pb-0">
+                    <div class="sign-up-rectangle border mx-auto p-4 mt-4">
+                        <div class="sign-up-rectangle-header d-flex align-items-center mb-3">
+                            <div class="n-icon flex-shrink-0"></div>
+                            <h3 class="ml-2 pb-0">START YOUR DAY WITH OUR TOP 5 ARTICLES</h3>
                         </div>
-                    </section>
-                
+                        <input class="sign-up-input border w-100 mb-2" type="email" placeholder="Email adress">
+                        <a class="free-sign-up-button d-block w-100 orange-bc py-2 text-center text-white" href="#">FREE
+                            SIGN UP <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </section>
+
             </article>
 
             <!-- top story container -->
@@ -315,12 +400,15 @@
                     <h3>TOP STORY</h3>
                     <div class="top-featured-story-image-container position-relative">
                         <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632891/trump.webp?w=591&h=364&f=f9f1085fc15697f2de24cc997aa90b15" alt="picture of donald trump">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632891/trump.webp?w=591&h=364&f=f9f1085fc15697f2de24cc997aa90b15"
+                                alt="picture of donald trump">
                         </a>
                         <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
                     </div>
                     <h2><a href="#">Trump trumpingly trumpens again - "Very trumpish" non-trumpers say</a></h2>
-                    <p class="article-subtext">Donald Trump trumpingly trumpens through trumpenstate during trumptime.</p>
+                    <p class="article-subtext">Donald Trump trumpingly trumpens through trumpenstate during trumptime.
+                    </p>
                 </section>
 
                 <!-- my turn -->
@@ -328,37 +416,51 @@
                 <div class="my-turn-container order-3 w-100 order-md-1 fluid-container row no-gutters px-md-3">
                     <section class="my-turn pt-3 w-100 px-3 px-md-0 pb-md-0 col-md">
                         <h3>MY TURN</h3>
-                        <img class="w-100" src="https://d.newsweek.com/en/full/1628273/engagement-marriage-engagement-ring.webp?w=397&h=397&f=a2a1ee2e3dd1e1b27596ccdc2aafcdd4" alt="diamond ring">
-                        <h4 class="pt-3 pb-2">'Street seller offering diamond rings for 10$ - swears they're non-fake' </h4>
+                        <img class="w-100"
+                            src="https://d.newsweek.com/en/full/1628273/engagement-marriage-engagement-ring.webp?w=397&h=397&f=a2a1ee2e3dd1e1b27596ccdc2aafcdd4"
+                            alt="diamond ring">
+                        <h4 class="pt-3 pb-2">'Street seller offering diamond rings for 10$ - swears they're non-fake'
+                        </h4>
                     </section>
                     <section class="my-turn pt-3 w-100 px-3 mx-md-3 px-md-0 pb-md-0 col-md">
                         <h3 class="d-none d-md-block text-white">MY TURN</h3>
-                        <img class="w-100" src="https://d.newsweek.com/en/full/1632640/black-holes-black-hole-collision-space.webp?w=397&h=397&f=a938820fe325bd99993742db69fec2a6" alt="black holes">
+                        <img class="w-100"
+                            src="https://d.newsweek.com/en/full/1632640/black-holes-black-hole-collision-space.webp?w=397&h=397&f=a938820fe325bd99993742db69fec2a6"
+                            alt="black holes">
                         <h4 class="pt-3 pb-2">'Two black holes doing stuff is making space nerds excited' </h4>
                     </section>
                     <section class="my-turn pt-3 w-100 px-3 px-md-0 pb-md-0 col-md">
                         <h3 class="d-none d-md-block text-white">MY TURN</h3>
-                        <img class="w-100" src="https://d.newsweek.com/en/full/1631229/funerals-confessions-private-investigator.webp?w=397&h=397&f=6ea67764165a0d70aa9e27a08a4d5033" alt="guy in front of cross">
+                        <img class="w-100"
+                            src="https://d.newsweek.com/en/full/1631229/funerals-confessions-private-investigator.webp?w=397&h=397&f=6ea67764165a0d70aa9e27a08a4d5033"
+                            alt="guy in front of cross">
                         <h4 class="pt-3 pb-2">'Why we should go back to burning witches' </h4>
                     </section>
                 </div>
 
                 <!-- culture & travel-->
 
-                <div class="culture-travel-container order-4 mt-1 mt-md-0 pb-3 bg-white w-100 order-md-2 fluid-container row no-gutters px-md-3">
+                <div
+                    class="culture-travel-container order-4 mt-1 mt-md-0 pb-3 bg-white w-100 order-md-2 fluid-container row no-gutters px-md-3">
                     <section class="culture-travel pt-3 w-100 col-md px-3 px-md-0 pb-md-0">
                         <h3>CULTURE & TRAVEL</h3>
-                        <img class="w-100" src="https://d.newsweek.com/en/full/1629368/rhinos.webp?w=397&h=397&f=3cb0b41ecc22788d1da11563e61894b7" alt="rhinos eating">
+                        <img class="w-100"
+                            src="https://d.newsweek.com/en/full/1629368/rhinos.webp?w=397&h=397&f=3cb0b41ecc22788d1da11563e61894b7"
+                            alt="rhinos eating">
                         <h4 class="pt-3 pb-2">'Have a look at these two Rhinos eating grass - nice!' </h4>
                     </section>
                     <section class="culture-travel pt-3 w-100 col-md mx-md-3 px-3 px-md-0 pb-md-0">
                         <h3 class="d-none d-md-block text-white">CULTURE & TRAVEL</h3>
-                        <img class="w-100" src="https://d.newsweek.com/en/full/1629519/met.webp?w=397&h=397&f=4264938aed771554d52d21b49e161b24" alt="guy with mask">
+                        <img class="w-100"
+                            src="https://d.newsweek.com/en/full/1629519/met.webp?w=397&h=397&f=4264938aed771554d52d21b49e161b24"
+                            alt="guy with mask">
                         <h4 class="pt-3 pb-2">'And IIIIII will aaaaaalways looooooove youuu' </h4>
                     </section>
                     <section class="culture-travel pt-3 w-100 col-md px-3 px-md-0 pb-md-0">
                         <h3 class="d-none d-md-block text-white">CULTURE & TRAVEL</h3>
-                        <img class="w-100" src="https://d.newsweek.com/en/full/1628308/kellee-edwards-vultee-bt-13-aircraft.webp?w=397&h=397&f=415ed1209407b816f9a935d18e22c5a9" alt="girl in front of plane">
+                        <img class="w-100"
+                            src="https://d.newsweek.com/en/full/1628308/kellee-edwards-vultee-bt-13-aircraft.webp?w=397&h=397&f=415ed1209407b816f9a935d18e22c5a9"
+                            alt="girl in front of plane">
                         <h4 class="pt-3 pb-2">'Air Force contemplating using Kamikaze fighters' </h4>
                     </section>
                 </div>
@@ -369,57 +471,67 @@
                 <div class="more-stories-container order-1 bg-white pb-3 w-100 order-md-3 px-md-3 px-3">
                     <section class="more-stories pt-3 px-md-0 px-0">
                         <h3>MORE STORIES</h3>
-                        <div class="opinion-seperator border-bottom mb-3"></div> 
+                        <div class="opinion-seperator border-bottom mb-3"></div>
                         <div class="more-stories-pic-description d-flex">
-                            <img src="https://d.newsweek.com/en/full/1632804/meghan-markle-prince-harry-fiji.webp?w=95&h=95&f=54d8b2257c38afbd019b404de3f17aed" alt="picture of prince harry and wife">
+                            <img src="https://d.newsweek.com/en/full/1632804/meghan-markle-prince-harry-fiji.webp?w=95&h=95&f=54d8b2257c38afbd019b404de3f17aed"
+                                alt="picture of prince harry and wife">
                             <div class="more-stories-description ml-3">
                                 <h4><a href="#">Meghan Markle is leaving Prince Harry for Mike Ross</a></h4>
-                                <p class="article-subtext">Old love does not rust - Meghan returning to Harvey's law office</p>
+                                <p class="article-subtext">Old love does not rust - Meghan returning to Harvey's law
+                                    office</p>
                             </div>
                         </div>
                     </section>
-                    <div class="opinion-seperator border-bottom my-3"></div> 
+                    <div class="opinion-seperator border-bottom my-3"></div>
                     <section class="more-stories px-md-0 px-0">
                         <div class="more-stories-pic-description d-flex">
-                            <img src="https://d.newsweek.com/en/full/1632523/donald-trump-joe-biden-polls.webp?w=95&h=95&f=e13eb550adbd4c07dec5df4251943df5" alt="donald trump">
+                            <img src="https://d.newsweek.com/en/full/1632523/donald-trump-joe-biden-polls.webp?w=95&h=95&f=e13eb550adbd4c07dec5df4251943df5"
+                                alt="donald trump">
                             <div class="more-stories-description ml-3">
                                 <h4><a href="#">Disturbing reveal about Donald J. Trump</a></h4>
-                                <p class="article-subtext">Uh.. not really. Just the obligatory Trump article again, sorry.</p>
+                                <p class="article-subtext">Uh.. not really. Just the obligatory Trump article again,
+                                    sorry.</p>
                             </div>
                         </div>
                     </section>
-                    <div class="opinion-seperator border-bottom my-3"></div> 
+                    <div class="opinion-seperator border-bottom my-3"></div>
                     <section class="more-stories px-md-0 px-0">
                         <div class="more-stories-pic-description d-flex">
-                            <img src="https://d.newsweek.com/en/full/1632804/meghan-markle-prince-harry-fiji.webp?w=95&h=95&f=54d8b2257c38afbd019b404de3f17aed" alt="picture of prince harry and wife">
+                            <img src="https://d.newsweek.com/en/full/1632804/meghan-markle-prince-harry-fiji.webp?w=95&h=95&f=54d8b2257c38afbd019b404de3f17aed"
+                                alt="picture of prince harry and wife">
                             <div class="more-stories-description ml-3">
                                 <h4><a href="#">Meghan Markle is leaving Prince Harry for Mike Ross</a></h4>
-                                <p class="article-subtext">Old love does not rust - Meghan returning to Harvey's law office</p>
+                                <p class="article-subtext">Old love does not rust - Meghan returning to Harvey's law
+                                    office</p>
                             </div>
                         </div>
                     </section>
-                    <div class="opinion-seperator border-bottom my-3"></div> 
+                    <div class="opinion-seperator border-bottom my-3"></div>
                     <section class="more-stories px-md-0 px-0">
                         <div class="more-stories-pic-description d-flex">
-                            <img src="https://d.newsweek.com/en/full/1632523/donald-trump-joe-biden-polls.webp?w=95&h=95&f=e13eb550adbd4c07dec5df4251943df5" alt="donald trump">
+                            <img src="https://d.newsweek.com/en/full/1632523/donald-trump-joe-biden-polls.webp?w=95&h=95&f=e13eb550adbd4c07dec5df4251943df5"
+                                alt="donald trump">
                             <div class="more-stories-description ml-3">
                                 <h4><a href="#">Disturbing reveal about Donald J. Trump</a></h4>
-                                <p class="article-subtext">Uh.. not really. Just the obligatory Trump article again, sorry.</p>
+                                <p class="article-subtext">Uh.. not really. Just the obligatory Trump article again,
+                                    sorry.</p>
                             </div>
                         </div>
                     </section>
-                    <div class="opinion-seperator border-bottom my-3"></div> 
+                    <div class="opinion-seperator border-bottom my-3"></div>
                     <section class="more-stories px-md-0 px-0">
                         <div class="more-stories-pic-description d-flex">
-                            <img src="https://d.newsweek.com/en/full/1632804/meghan-markle-prince-harry-fiji.webp?w=95&h=95&f=54d8b2257c38afbd019b404de3f17aed" alt="picture of prince harry and wife">
+                            <img src="https://d.newsweek.com/en/full/1632804/meghan-markle-prince-harry-fiji.webp?w=95&h=95&f=54d8b2257c38afbd019b404de3f17aed"
+                                alt="picture of prince harry and wife">
                             <div class="more-stories-description ml-3">
                                 <h4><a href="#">Meghan Markle is leaving Prince Harry for Mike Ross</a></h4>
-                                <p class="article-subtext">Old love does not rust - Meghan returning to Harvey's law office</p>
+                                <p class="article-subtext">Old love does not rust - Meghan returning to Harvey's law
+                                    office</p>
                             </div>
                         </div>
                     </section>
                 </div>
-                
+
                 <div class="thick-seperation-line grayish-bg-color order-2 w-100 border-top d-md-none"></div>
 
                 <!-- sign up appearing at small screen for maintaining order -->
@@ -431,642 +543,781 @@
                             <h3 class="ml-2 pb-0">START YOUR DAY WITH OUR TOP 5 ARTICLES</h3>
                         </div>
                         <input class="sign-up-input border w-100 mb-2" type="email" placeholder="Email adress">
-                        <a class="free-sign-up-button d-block w-100 orange-bc py-2 text-center text-white" href="#">FREE SIGN UP <i class="fas fa-chevron-right"></i></a>
+                        <a class="free-sign-up-button d-block w-100 orange-bc py-2 text-center text-white" href="#">FREE
+                            SIGN UP <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </section>
             </article>
             <div class="thick-seperation-line order-2 w-100 border-top d-md-none"></div>
         </main>
 
-            <div class="n-icon-headline-container px-3">
-                <div class="n-icon-headline d-flex justify-content-center align-items-center">
-                    <div class="n-icon flex-shrink-0"></div>
-                    <span><h3 class="in-the-magazine-headline ml-2 pb-0">IN THE MAGAZINE</h3></span>
+        <div class="n-icon-headline-container px-3">
+            <div class="n-icon-headline d-flex justify-content-center align-items-center">
+                <div class="n-icon flex-shrink-0"></div>
+                <span>
+                    <h3 class="in-the-magazine-headline ml-2 pb-0">IN THE MAGAZINE</h3>
+                </span>
+            </div>
+            <div class="seperation-line border-bottom mt-3 d-none d-md-block my-md-2 my-lg-3"></div>
+        </div>
+
+        <!-- in the magazine section  -->
+
+        <article class="in-the-magazine-container px-3 container-fluid row no-gutters mb-3">
+            <section class="pb-4 w-100 col-md mr-md-4">
+                <a href="#"><img class="w-100"
+                        src="https://d.newsweek.com/en/full/1629348/fea-finance-covid-banner.webp?w=466&h=311&l=47&t=46&q=90&f=8d2ba9398fe877c7a48cac39b61c26ce"
+                        alt="benjamin franklin with face mask"></a>
+                <div class="magazine-section-headline d-flex my-2">
+                    <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
+                    <h4 class="py-1"><a class="orange-color " href="#">BUSINESS</a></h4>
                 </div>
-                <div class="seperation-line border-bottom mt-3 d-none d-md-block my-md-2 my-lg-3"></div>
+                <h4><a class="in-the-magazine-description" href="#">Send your bills to this business to get rid of the
+                        Covid Viruses on it</a></h4>
+            </section>
+            <section class="pb-4 w-100 col-md mr-md-4">
+                <a href="#"><img class="w-100"
+                        src="https://d.newsweek.com/en/full/1629536/per-spy-masters-book-banner.jpg?w=466&h=311&l=50&t=45&q=90&f=7a9a8aa3534c56503ff81528414bb0d1"
+                        alt="hacker at pc"></a>
+                <div class="magazine-section-headline d-flex my-2">
+                    <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
+                    <h4 class="py-1"><a class="orange-color " href="#">EVIL HACKING</a></h4>
+                </div>
+                <h4><a class="in-the-magazine-description" href="#">Studies show: 95% of evil hackers wear the same dark
+                        hood</a></h4>
+            </section>
+            <section class="pb-4 w-100 col-md mr-md-4">
+                <a href="#"><img class="w-100"
+                        src="https://d.newsweek.com/en/full/1629704/cover-pandemic-money-graphic.webp?w=466&h=311&q=90&f=1d42d8236edf202d85663c3b4a8409e6"
+                        alt="piggy bank getting crushed"></a>
+                <div class="magazine-section-headline d-flex my-2">
+                    <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
+                    <h4 class="py-1"><a class="orange-color " href="#">NO IDEA REALLY</a></h4>
+                </div>
+                <h4><a class="in-the-magazine-description" href="#">In all seriousness - who designed this picture? Is
+                        this a job?</a></h4>
+            </section>
+            <section class="pb-4 w-100 col-md">
+                <a href="#"><img class="w-100"
+                        src="https://d.newsweek.com/en/full/1629348/fea-finance-covid-banner.webp?w=466&h=311&l=47&t=46&q=90&f=8d2ba9398fe877c7a48cac39b61c26ce"
+                        alt="benjamin franklin with face mask"></a>
+                <div class="magazine-section-headline d-flex my-2">
+                    <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
+                    <h4 class="py-1"><a class="orange-color " href="#">BUSINESS</a></h4>
+                </div>
+                <h4><a class="in-the-magazine-description" href="#">Send your bills to this business to get rid of the
+                        Covid Viruses on it</a></h4>
+            </section>
+            <div class="w-100"></div>
+            <section class="pb-2 w-100 col-md mr-md-4">
+                <a href="#"><img class="w-100"
+                        src="https://d.newsweek.com/en/full/1629536/per-spy-masters-book-banner.jpg?w=466&h=311&l=50&t=45&q=90&f=7a9a8aa3534c56503ff81528414bb0d1"
+                        alt=""></a>
+                <div class="magazine-section-headline d-flex my-2">
+                    <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
+                    <h4 class="py-1"><a class="orange-color " href="#">BUSINESS</a></h4>
+                </div>
+                <h4><a class="in-the-magazine-description" href="#">Obama Fear of Retaliation Limited Response to
+                        Russian Meddling, Book Reveal</a></h4>
+            </section>
+            <section class="pb-2 w-100 col-md mr-md-4">
+                <a href="#"><img class="w-100"
+                        src="https://d.newsweek.com/en/full/1629704/cover-pandemic-money-graphic.webp?w=466&h=311&q=90&f=1d42d8236edf202d85663c3b4a8409e6"
+                        alt="piggy bank getting crushed"></a>
+                <div class="magazine-section-headline d-flex my-2">
+                    <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
+                    <h4 class="py-1"><a class="orange-color " href="#">NO IDEA REALLY</a></h4>
+                </div>
+                <h4><a class="in-the-magazine-description" href="#">In all seriousness - who designed this picture? Is
+                        this a job?</a></h4>
+            </section>
+            <section class="pb-2 w-100 col-md mr-md-4">
+                <a href="#"><img class="w-100"
+                        src="https://d.newsweek.com/en/full/1629348/fea-finance-covid-banner.webp?w=466&h=311&l=47&t=46&q=90&f=8d2ba9398fe877c7a48cac39b61c26ce"
+                        alt="benjamin franklin with face mask"></a>
+                <div class="magazine-section-headline d-flex my-2">
+                    <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
+                    <h4 class="py-1"><a class="orange-color " href="#">BUSINESS</a></h4>
+                </div>
+                <h4><a class="in-the-magazine-description" href="#">Send your bills to this business to get rid of the
+                        Covid Viruses on it</a></h4>
+            </section>
+            <section class="pb-1 w-100 col-md">
+                <a href="#"><img class="w-100"
+                        src="https://d.newsweek.com/en/full/1629536/per-spy-masters-book-banner.jpg?w=466&h=311&l=50&t=45&q=90&f=7a9a8aa3534c56503ff81528414bb0d1"
+                        alt=""></a>
+                <div class="magazine-section-headline d-flex my-2">
+                    <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
+                    <h4 class="py-1"><a class="orange-color " href="#">BUSINESS</a></h4>
+                </div>
+                <h4><a class="in-the-magazine-description" href="#">Obama Fear of Retaliation Limited Response to
+                        Russian Meddling, Book Reveal</a></h4>
+            </section>
+        </article>
+
+        <div class="thick-seperation-line order-2 w-100 border-top d-md-none"></div>
+
+        <div class="n-icon-headline-container px-3 mt-3">
+            <div class="n-icon-headline d-flex justify-content-center align-items-center">
+                <div class="n-icon flex-shrink-0"></div>
+                <span>
+                    <h3 class="in-the-magazine-headline ml-2 pb-0">EDITOR'S PICK</h3>
+                </span>
+            </div>
+            <div class="seperation-line border-bottom my-3"></div>
+        </div>
+
+        <!-- editors pick section -->
+
+        <article class="editors-pick-container px-3 container-fluid row no-gutters">
+
+            <!-- using same classes as in featured stories section since the styling is basically the same here -->
+
+            <section class="featured-stories pb-3 mb-1 w-100 col-md mr-md-4">
+                <div class="top-featured-story-image-container position-relative">
+                    <a href="#">
+                        <img class="w-100 d-block"
+                            src="https://d.newsweek.com/en/full/1632872/edward-snowden-donald-trump-russia-pardon-election.webp?w=397&h=265&q=90&f=b107e03942ab46169744b0d92cb30309"
+                            alt="picture of edward snowden">
+                    </a>
+                    <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
+                </div>
+                <h2><a href="#">Trump invites Snowden to dinner at White House</a></h2>
+                <p class="article-subtext">"How very nice and unsuspicious of him!" Snowden commented.</p>
+            </section>
+            <section class="featured-stories pb-3 mb-1 w-100 col-md mr-lg-4">
+                <div class="top-featured-story-image-container position-relative">
+                    <a href="#">
+                        <img class="w-100 d-block"
+                            src="https://d.newsweek.com/en/full/1632907/elon-musk.webp?w=397&h=265&q=90&f=c5609af196016801a562a99cd8634026"
+                            alt="picture of elon musk">
+                    </a>
+                    <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
+                </div>
+                <h2><a href="#">Shocking! Elon Musk going completely bankrupt</a></h2>
+                <p class="article-subtext">While Tesla is doing absolutely great Musk looses all his money after
+                    divorcing 7th wife.</p>
+            </section>
+            <div class="w-100 d-none d-md-inline d-lg-none"></div>
+            <section class="featured-stories pb-3 mb-1 w-100 col-md mr-md-4">
+                <div class="top-featured-story-image-container position-relative">
+                    <a href="#">
+                        <img class="w-100 d-block"
+                            src="https://d.newsweek.com/en/full/1632551/howie-hawkins.webp?w=397&h=265&l=50&t=50&q=90&f=d586acc5de4ec20a8951c34281d4740a"
+                            alt="guy with microphone">
+                    </a>
+                    <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
+                </div>
+                <h2><a href="#">Old guy with microphone is looking very displeased</a></h2>
+                <p class="article-subtext">Something is bothering old guy with microphone - what might it be?</p>
+            </section>
+            <section class="featured-stories pb-3 mb-1 w-100 col-md">
+                <div class="top-featured-story-image-container position-relative">
+                    <a href="#">
+                        <img class="w-100 d-block"
+                            src="https://d.newsweek.com/en/full/1632872/edward-snowden-donald-trump-russia-pardon-election.webp?w=397&h=265&q=90&f=b107e03942ab46169744b0d92cb30309"
+                            alt="picture of edward snowden">
+                    </a>
+                    <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
+                </div>
+                <h2><a href="#">Trump invites Snowden to dinner at White House</a></h2>
+                <p class="article-subtext">"How very nice and unsuspicious of him!" Snowden commented.</p>
+            </section>
+            <div class="w-100 d-none d-md-inline"></div>
+            <section class="featured-stories pb-3 mb-1 w-100 col-md mr-md-4">
+                <div class="top-featured-story-image-container position-relative">
+                    <a href="#">
+                        <img class="w-100 d-block"
+                            src="https://d.newsweek.com/en/full/1632907/elon-musk.webp?w=397&h=265&q=90&f=c5609af196016801a562a99cd8634026"
+                            alt="picture of elon musk">
+                    </a>
+                    <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
+                </div>
+                <h2><a href="#">Shocking! Elon Musk going completely bankrupt</a></h2>
+                <p class="article-subtext">While Tesla is doing absolutely great Musk looses all his money after
+                    divorcing 7th wife.</p>
+            </section>
+            <section class="featured-stories pb-3 mb-1 w-100 col-md mr-lg-4">
+                <div class="top-featured-story-image-container position-relative">
+                    <a href="#">
+                        <img class="w-100 d-block"
+                            src="https://d.newsweek.com/en/full/1632551/howie-hawkins.webp?w=397&h=265&l=50&t=50&q=90&f=d586acc5de4ec20a8951c34281d4740a"
+                            alt="guy with microphone">
+                    </a>
+                    <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
+                </div>
+                <h2><a href="#">Old guy with microphone is looking very displeased</a></h2>
+                <p class="article-subtext">Something is bothering old guy with microphone - what might it be?</p>
+            </section>
+            <div class="w-100 d-none d-md-inline d-lg-none"></div>
+            <section class="featured-stories pb-3 mb-1 w-100 col-md mr-md-4">
+                <div class="top-featured-story-image-container position-relative">
+                    <a href="#">
+                        <img class="w-100 d-block"
+                            src="https://d.newsweek.com/en/full/1632872/edward-snowden-donald-trump-russia-pardon-election.webp?w=397&h=265&q=90&f=b107e03942ab46169744b0d92cb30309"
+                            alt="picture of edward snowden">
+                    </a>
+                    <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
+                </div>
+                <h2><a href="#">Trump invites Snowden to dinner at White House</a></h2>
+                <p class="article-subtext">"How very nice and unsuspicious of him!" Snowden commented.</p>
+            </section>
+            <section class="featured-stories mb-1 w-100 col-md">
+                <div class="top-featured-story-image-container position-relative">
+                    <a href="#">
+                        <img class="w-100 d-block"
+                            src="https://d.newsweek.com/en/full/1632907/elon-musk.webp?w=397&h=265&q=90&f=c5609af196016801a562a99cd8634026"
+                            alt="picture of elon musk">
+                    </a>
+                    <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
+                </div>
+                <h2><a href="#">Shocking! Elon Musk going completely bankrupt</a></h2>
+                <p class="article-subtext">While Tesla is doing absolutely great Musk looses all his money after
+                    divorcing 7th wife.</p>
+
+            </section>
+        </article>
+
+        <!-- grayish thick seperation line appearing several times on small screen -->
+
+        <div class="px-3">
+            <div class="border-bottom my-4"></div>
+        </div>
+
+        <!-- USA NEWS-->
+
+        <!-- using same classes as for the featured stories in sections-->
+
+        <article class="usa-news px-3">
+            <a href="#" class="text-decoration-none">
+                <h2 class="orange-color mb-2">U.S.</h2>
+            </a>
+            <div class="usa-section-container container-fluid row no-gutters px-0">
+                <section class="featured-stories pb-3 w-100 col-md">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037"
+                                alt="fly rubbing hands evily">
+                        </a>
+                    </div>
+                    <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
+                </section>
+                <section class="featured-stories pb-1 w-100 col-md mx-md-4">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603"
+                                alt="white shark">
+                        </a>
+                    </div>
+                    <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at
+                            beach</a></h2>
+                </section>
+
+                <!-- USA NEWS SMALL PICTURES-->
+
+                <!-- using same classes as for more stories in sections-->
+
+                <div class="usa-small-pic-container w-100 col-md">
+                    <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img class="h-auto flex-shrink-0"
+                                src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b"
+                                alt="guy in suit">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a"
+                                alt="kim jong un">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934"
+                                alt="donald trump">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
 
-            <!-- in the magazine section  -->
+            <div class="border-bottom my-4"></div>
 
-            <article class="in-the-magazine-container px-3 container-fluid row no-gutters mb-3">
-                <section class="pb-4 w-100 col-md mr-md-4">
-                    <a href="#"><img class="w-100" src="https://d.newsweek.com/en/full/1629348/fea-finance-covid-banner.webp?w=466&h=311&l=47&t=46&q=90&f=8d2ba9398fe877c7a48cac39b61c26ce" alt="benjamin franklin with face mask"></a>
-                    <div class="magazine-section-headline d-flex my-2">
-                        <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
-                        <h4 class="py-1"><a class="orange-color " href="#">BUSINESS</a></h4>
+        </article>
+        <article class="usa-news px-3">
+            <a href="#" class="text-decoration-none">
+                <h2 class="orange-color mb-2">U.S.</h2>
+            </a>
+            <div class="usa-section-container container-fluid row no-gutters px-0">
+                <section class="featured-stories pb-3 w-100 col-md">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037"
+                                alt="fly rubbing hands evily">
+                        </a>
                     </div>
-                    <h4><a class="in-the-magazine-description" href="#">Send your bills to this business to get rid of the Covid Viruses on it</a></h4>
+                    <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
                 </section>
-                <section class="pb-4 w-100 col-md mr-md-4">
-                    <a href="#"><img class="w-100" src="https://d.newsweek.com/en/full/1629536/per-spy-masters-book-banner.jpg?w=466&h=311&l=50&t=45&q=90&f=7a9a8aa3534c56503ff81528414bb0d1" alt="hacker at pc"></a>
-                    <div class="magazine-section-headline d-flex my-2">
-                        <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
-                        <h4 class="py-1"><a class="orange-color " href="#">EVIL HACKING</a></h4>
+                <section class="featured-stories pb-1 w-100 col-md mx-md-4">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603"
+                                alt="white shark">
+                        </a>
                     </div>
-                    <h4><a class="in-the-magazine-description" href="#">Studies show: 95% of evil hackers wear the same dark hood</a></h4>
+                    <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at
+                            beach</a></h2>
                 </section>
-                <section class="pb-4 w-100 col-md mr-md-4">
-                    <a href="#"><img class="w-100" src="https://d.newsweek.com/en/full/1629704/cover-pandemic-money-graphic.webp?w=466&h=311&q=90&f=1d42d8236edf202d85663c3b4a8409e6" alt="piggy bank getting crushed"></a>
-                    <div class="magazine-section-headline d-flex my-2">
-                        <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
-                        <h4 class="py-1"><a class="orange-color " href="#">NO IDEA REALLY</a></h4>
-                    </div>
-                    <h4><a class="in-the-magazine-description" href="#">In all seriousness - who designed this picture? Is this a job?</a></h4>
-                </section>
-                <section class="pb-4 w-100 col-md">
-                    <a href="#"><img class="w-100" src="https://d.newsweek.com/en/full/1629348/fea-finance-covid-banner.webp?w=466&h=311&l=47&t=46&q=90&f=8d2ba9398fe877c7a48cac39b61c26ce" alt="benjamin franklin with face mask"></a>
-                    <div class="magazine-section-headline d-flex my-2">
-                        <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
-                        <h4 class="py-1"><a class="orange-color " href="#">BUSINESS</a></h4>
-                    </div>
-                    <h4><a class="in-the-magazine-description" href="#">Send your bills to this business to get rid of the Covid Viruses on it</a></h4>
-                </section>
-                <div class="w-100"></div>
-                <section class="pb-2 w-100 col-md mr-md-4">
-                    <a href="#"><img class="w-100" src="https://d.newsweek.com/en/full/1629536/per-spy-masters-book-banner.jpg?w=466&h=311&l=50&t=45&q=90&f=7a9a8aa3534c56503ff81528414bb0d1" alt=""></a>
-                    <div class="magazine-section-headline d-flex my-2">
-                        <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
-                        <h4 class="py-1"><a class="orange-color " href="#">BUSINESS</a></h4>
-                    </div>
-                    <h4><a class="in-the-magazine-description" href="#">Obama Fear of Retaliation Limited Response to Russian Meddling, Book Reveal</a></h4>
-                </section>
-                <section class="pb-2 w-100 col-md mr-md-4">
-                    <a href="#"><img class="w-100" src="https://d.newsweek.com/en/full/1629704/cover-pandemic-money-graphic.webp?w=466&h=311&q=90&f=1d42d8236edf202d85663c3b4a8409e6" alt="piggy bank getting crushed"></a>
-                    <div class="magazine-section-headline d-flex my-2">
-                        <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
-                        <h4 class="py-1"><a class="orange-color " href="#">NO IDEA REALLY</a></h4>
-                    </div>
-                    <h4><a class="in-the-magazine-description" href="#">In all seriousness - who designed this picture? Is this a job?</a></h4>
-                </section>
-                <section class="pb-2 w-100 col-md mr-md-4">
-                    <a href="#"><img class="w-100" src="https://d.newsweek.com/en/full/1629348/fea-finance-covid-banner.webp?w=466&h=311&l=47&t=46&q=90&f=8d2ba9398fe877c7a48cac39b61c26ce" alt="benjamin franklin with face mask"></a>
-                    <div class="magazine-section-headline d-flex my-2">
-                        <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
-                        <h4 class="py-1"><a class="orange-color " href="#">BUSINESS</a></h4>
-                    </div>
-                    <h4><a class="in-the-magazine-description" href="#">Send your bills to this business to get rid of the Covid Viruses on it</a></h4>
-                </section>
-                <section class="pb-1 w-100 col-md">
-                    <a href="#"><img class="w-100" src="https://d.newsweek.com/en/full/1629536/per-spy-masters-book-banner.jpg?w=466&h=311&l=50&t=45&q=90&f=7a9a8aa3534c56503ff81528414bb0d1" alt=""></a>
-                    <div class="magazine-section-headline d-flex my-2">
-                        <h4 class="text-white orange-bc px-2 py-1 mr-3">COVER</h4>
-                        <h4 class="py-1"><a class="orange-color " href="#">BUSINESS</a></h4>
-                    </div>
-                    <h4><a class="in-the-magazine-description" href="#">Obama Fear of Retaliation Limited Response to Russian Meddling, Book Reveal</a></h4>
-                </section>
-            </article>
 
-            <div class="thick-seperation-line order-2 w-100 border-top d-md-none"></div>
+                <!-- USA NEWS SMALL PICTURES-->
 
-            <div class="n-icon-headline-container px-3 mt-3">
-                <div class="n-icon-headline d-flex justify-content-center align-items-center">
-                    <div class="n-icon flex-shrink-0"></div>
-                    <span><h3 class="in-the-magazine-headline ml-2 pb-0">EDITOR'S PICK</h3></span>
+                <!-- using same classes as for more stories in sections-->
+
+                <div class="usa-small-pic-container w-100 col-md">
+                    <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img class="h-auto flex-shrink-0"
+                                src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b"
+                                alt="guy in suit">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a"
+                                alt="kim jong un">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934"
+                                alt="donald trump">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div class="seperation-line border-bottom my-3"></div>
             </div>
 
-            <!-- editors pick section -->
+            <div class="border-bottom my-4"></div>
 
-            <article class="editors-pick-container px-3 container-fluid row no-gutters">
+        </article>
+        <article class="usa-news px-3">
+            <a href="#" class="text-decoration-none">
+                <h2 class="orange-color mb-2">U.S.</h2>
+            </a>
+            <div class="usa-section-container container-fluid row no-gutters px-0">
+                <section class="featured-stories pb-3 w-100 col-md">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037"
+                                alt="fly rubbing hands evily">
+                        </a>
+                    </div>
+                    <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
+                </section>
+                <section class="featured-stories pb-1 w-100 col-md mx-md-4">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603"
+                                alt="white shark">
+                        </a>
+                    </div>
+                    <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at
+                            beach</a></h2>
+                </section>
 
-                <!-- using same classes as in featured stories section since the styling is basically the same here -->
+                <!-- USA NEWS SMALL PICTURES-->
 
-                <section class="featured-stories pb-3 mb-1 w-100 col-md mr-md-4">
-                    <div class="top-featured-story-image-container position-relative">
-                        <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632872/edward-snowden-donald-trump-russia-pardon-election.webp?w=397&h=265&q=90&f=b107e03942ab46169744b0d92cb30309" alt="picture of edward snowden">
-                        </a>
-                        <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
-                    </div>
-                    <h2><a href="#">Trump invites Snowden to dinner at White House</a></h2>
-                    <p class="article-subtext">"How very nice and unsuspicious of him!" Snowden commented.</p>
-                </section>
-                <section class="featured-stories pb-3 mb-1 w-100 col-md mr-lg-4">
-                    <div class="top-featured-story-image-container position-relative">
-                        <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632907/elon-musk.webp?w=397&h=265&q=90&f=c5609af196016801a562a99cd8634026" alt="picture of elon musk">
-                        </a>
-                        <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
-                    </div>
-                    <h2><a href="#">Shocking! Elon Musk going completely bankrupt</a></h2>
-                    <p class="article-subtext">While Tesla is doing absolutely great Musk looses all his money after divorcing 7th wife.</p>
-                </section>
-                <div class="w-100 d-none d-md-inline d-lg-none"></div>
-                <section class="featured-stories pb-3 mb-1 w-100 col-md mr-md-4">
-                    <div class="top-featured-story-image-container position-relative">
-                        <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632551/howie-hawkins.webp?w=397&h=265&l=50&t=50&q=90&f=d586acc5de4ec20a8951c34281d4740a" alt="guy with microphone">
-                        </a>
-                        <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
-                    </div>
-                    <h2><a href="#">Old guy with microphone is looking very displeased</a></h2>
-                    <p class="article-subtext">Something is bothering old guy with microphone - what might it be?</p>
-                </section>
-                <section class="featured-stories pb-3 mb-1 w-100 col-md">
-                    <div class="top-featured-story-image-container position-relative">
-                        <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632872/edward-snowden-donald-trump-russia-pardon-election.webp?w=397&h=265&q=90&f=b107e03942ab46169744b0d92cb30309" alt="picture of edward snowden">
-                        </a>
-                        <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
-                    </div>
-                    <h2><a href="#">Trump invites Snowden to dinner at White House</a></h2>
-                    <p class="article-subtext">"How very nice and unsuspicious of him!" Snowden commented.</p>
-                </section>
-                <div class="w-100 d-none d-md-inline"></div>
-                <section class="featured-stories pb-3 mb-1 w-100 col-md mr-md-4">
-                    <div class="top-featured-story-image-container position-relative">
-                        <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632907/elon-musk.webp?w=397&h=265&q=90&f=c5609af196016801a562a99cd8634026" alt="picture of elon musk">
-                        </a>
-                        <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
-                    </div>
-                    <h2><a href="#">Shocking! Elon Musk going completely bankrupt</a></h2>
-                    <p class="article-subtext">While Tesla is doing absolutely great Musk looses all his money after divorcing 7th wife.</p>
-                </section>
-                <section class="featured-stories pb-3 mb-1 w-100 col-md mr-lg-4">
-                    <div class="top-featured-story-image-container position-relative">
-                        <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632551/howie-hawkins.webp?w=397&h=265&l=50&t=50&q=90&f=d586acc5de4ec20a8951c34281d4740a" alt="guy with microphone">
-                        </a>
-                        <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
-                    </div>
-                    <h2><a href="#">Old guy with microphone is looking very displeased</a></h2>
-                    <p class="article-subtext">Something is bothering old guy with microphone - what might it be?</p>
-                </section>
-                <div class="w-100 d-none d-md-inline d-lg-none"></div>
-                <section class="featured-stories pb-3 mb-1 w-100 col-md mr-md-4">
-                    <div class="top-featured-story-image-container position-relative">
-                        <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632872/edward-snowden-donald-trump-russia-pardon-election.webp?w=397&h=265&q=90&f=b107e03942ab46169744b0d92cb30309" alt="picture of edward snowden">
-                        </a>
-                        <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
-                    </div>
-                    <h2><a href="#">Trump invites Snowden to dinner at White House</a></h2>
-                    <p class="article-subtext">"How very nice and unsuspicious of him!" Snowden commented.</p>
-                </section>
-                <section class="featured-stories mb-1 w-100 col-md">
-                    <div class="top-featured-story-image-container position-relative">
-                        <a href="#">
-                            <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632907/elon-musk.webp?w=397&h=265&q=90&f=c5609af196016801a562a99cd8634026" alt="picture of elon musk">
-                        </a>
-                        <div class="heading-rectangle position-absolute px-3 pb-1 pt-2"><a href="#">NEWS</a></div>
-                    </div>
-                    <h2><a href="#">Shocking! Elon Musk going completely bankrupt</a></h2>
-                    <p class="article-subtext">While Tesla is doing absolutely great Musk looses all his money after divorcing 7th wife.</p>
+                <!-- using same classes as for more stories in sections-->
 
-                </section>
-            </article>
-
-            <!-- grayish thick seperation line appearing several times on small screen -->
-
-            <div class="px-3">
-                <div class="border-bottom my-4"></div>
+                <div class="usa-small-pic-container w-100 col-md">
+                    <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img class="h-auto flex-shrink-0"
+                                src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b"
+                                alt="guy in suit">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a"
+                                alt="kim jong un">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934"
+                                alt="donald trump">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
 
-            <!-- USA NEWS-->
+            <div class="border-bottom my-4"></div>
 
-            <!-- using same classes as for the featured stories in sections-->
-
-            <article class="usa-news px-3">
-                <a href="#" class="text-decoration-none"><h2 class="orange-color mb-2">U.S.</h2></a>
-                <div class="usa-section-container container-fluid row no-gutters px-0">
-                    <section class="featured-stories pb-3 w-100 col-md">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037" alt="fly rubbing hands evily">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
-                    </section>
-                    <section class="featured-stories pb-1 w-100 col-md mx-md-4">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603" alt="white shark">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at beach</a></h2>
-                    </section>
-                    
-                    <!-- USA NEWS SMALL PICTURES-->
-
-                    <!-- using same classes as for more stories in sections-->
-
-                    <div class="usa-small-pic-container w-100 col-md">
-                        <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img class="h-auto flex-shrink-0" src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b" alt="guy in suit">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a" alt="kim jong un">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934" alt="donald trump">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
-                                </div>
-                            </div>
-                        </section>
+        </article>
+        <article class="usa-news px-3">
+            <a href="#" class="text-decoration-none">
+                <h2 class="orange-color mb-2">U.S.</h2>
+            </a>
+            <div class="usa-section-container container-fluid row no-gutters px-0">
+                <section class="featured-stories pb-3 w-100 col-md">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037"
+                                alt="fly rubbing hands evily">
+                        </a>
                     </div>
-                </div>
-
-                <div class="border-bottom my-4"></div>
-
-            </article>
-                        <article class="usa-news px-3">
-                <a href="#" class="text-decoration-none"><h2 class="orange-color mb-2">U.S.</h2></a>
-                <div class="usa-section-container container-fluid row no-gutters px-0">
-                    <section class="featured-stories pb-3 w-100 col-md">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037" alt="fly rubbing hands evily">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
-                    </section>
-                    <section class="featured-stories pb-1 w-100 col-md mx-md-4">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603" alt="white shark">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at beach</a></h2>
-                    </section>
-                    
-                    <!-- USA NEWS SMALL PICTURES-->
-
-                    <!-- using same classes as for more stories in sections-->
-
-                    <div class="usa-small-pic-container w-100 col-md">
-                        <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img class="h-auto flex-shrink-0" src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b" alt="guy in suit">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a" alt="kim jong un">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934" alt="donald trump">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
-                                </div>
-                            </div>
-                        </section>
+                    <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
+                </section>
+                <section class="featured-stories pb-1 w-100 col-md mx-md-4">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603"
+                                alt="white shark">
+                        </a>
                     </div>
+                    <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at
+                            beach</a></h2>
+                </section>
+
+                <!-- USA NEWS SMALL PICTURES-->
+
+                <!-- using same classes as for more stories in sections-->
+
+                <div class="usa-small-pic-container w-100 col-md">
+                    <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img class="h-auto flex-shrink-0"
+                                src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b"
+                                alt="guy in suit">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a"
+                                alt="kim jong un">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934"
+                                alt="donald trump">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-
-                <div class="border-bottom my-4"></div>
-
-            </article>
-                        <article class="usa-news px-3">
-                <a href="#" class="text-decoration-none"><h2 class="orange-color mb-2">U.S.</h2></a>
-                <div class="usa-section-container container-fluid row no-gutters px-0">
-                    <section class="featured-stories pb-3 w-100 col-md">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037" alt="fly rubbing hands evily">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
-                    </section>
-                    <section class="featured-stories pb-1 w-100 col-md mx-md-4">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603" alt="white shark">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at beach</a></h2>
-                    </section>
-                    
-                    <!-- USA NEWS SMALL PICTURES-->
-
-                    <!-- using same classes as for more stories in sections-->
-
-                    <div class="usa-small-pic-container w-100 col-md">
-                        <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img class="h-auto flex-shrink-0" src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b" alt="guy in suit">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a" alt="kim jong un">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934" alt="donald trump">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-                <div class="border-bottom my-4"></div>
-
-            </article>
-                        <article class="usa-news px-3">
-                <a href="#" class="text-decoration-none"><h2 class="orange-color mb-2">U.S.</h2></a>
-                <div class="usa-section-container container-fluid row no-gutters px-0">
-                    <section class="featured-stories pb-3 w-100 col-md">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037" alt="fly rubbing hands evily">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
-                    </section>
-                    <section class="featured-stories pb-1 w-100 col-md mx-md-4">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603" alt="white shark">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at beach</a></h2>
-                    </section>
-                    
-                    <!-- USA NEWS SMALL PICTURES-->
-
-                    <!-- using same classes as for more stories in sections-->
-
-                    <div class="usa-small-pic-container w-100 col-md">
-                        <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img class="h-auto flex-shrink-0" src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b" alt="guy in suit">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a" alt="kim jong un">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934" alt="donald trump">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-                <div class="border-bottom my-4"></div>
-
-            </article>
-                        <article class="usa-news px-3">
-                <a href="#" class="text-decoration-none"><h2 class="orange-color mb-2">U.S.</h2></a>
-                <div class="usa-section-container container-fluid row no-gutters px-0">
-                    <section class="featured-stories pb-3 w-100 col-md">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037" alt="fly rubbing hands evily">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
-                    </section>
-                    <section class="featured-stories pb-1 w-100 col-md mx-md-4">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603" alt="white shark">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at beach</a></h2>
-                    </section>
-                    
-                    <!-- USA NEWS SMALL PICTURES-->
-
-                    <!-- using same classes as for more stories in sections-->
-
-                    <div class="usa-small-pic-container w-100 col-md">
-                        <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img class="h-auto flex-shrink-0" src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b" alt="guy in suit">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a" alt="kim jong un">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934" alt="donald trump">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-                <div class="border-bottom my-4"></div>
-
-            </article>
-            <article class="usa-news px-3">
-                <a href="#" class="text-decoration-none"><h2 class="orange-color mb-2">U.S.</h2></a>
-                <div class="usa-section-container container-fluid row no-gutters px-0">
-                    <section class="featured-stories pb-3 w-100 col-md">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037" alt="fly rubbing hands evily">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
-                    </section>
-                    <section class="featured-stories pb-1 w-100 col-md mx-md-4">
-                        <div class="top-featured-story-image-container position-relative">
-                            <a href="#">
-                                <img class="w-100 d-block" src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603" alt="white shark">
-                            </a>
-                        </div>
-                        <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at beach</a></h2>
-                    </section>
-                    
-                    <!-- USA NEWS SMALL PICTURES-->
-
-                    <!-- using same classes as for more stories in sections-->
-
-                    <div class="usa-small-pic-container w-100 col-md">
-                        <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img class="h-auto flex-shrink-0" src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b" alt="guy in suit">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a" alt="kim jong un">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="opinion-seperator border-bottom my-2"></div> 
-                        <section class="more-stories px-md-0 px-0">
-                            <div class="more-stories-pic-description d-flex">
-                                <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934" alt="donald trump">
-                                <div class="more-stories-description ml-3">
-                                    <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-            </article>
-
-            <div class="px-3">
-                <div class="border-bottom mt-4 mb-5 d-none d-md-block"></div>
             </div>
-            <div class="thick-seperation-line w-100 border-top d-md-none mt-5 mb-3"></div>
 
-            <!-- NEWSLETTER -->
+            <div class="border-bottom my-4"></div>
 
-            <article class="subscribe-newsletter mb-3">
-                <section class="subscribe-container px-3 mb-3">
-                    <h3 class="orange-color mb-2 mb-lg-0">SUBSCRIBE</h2>
-                    <div class="subscribe-box position-relative text-center text-md-left d-flex flex-column justify-content-end justify-content-lg-start p-4 pb-lg-0">
-                        <img class="subscribe-box-pic-1 position-absolute" src="https://d.newsweek.com/en/full/1628669/cover-september-04-2020.jpg?w=170&q=95&f=1360030f30130d3440859fd318762628" alt="">
-                        <img class="subscribe-box-pic-2 position-absolute" src="https://d.newsweek.com/en/full/1631397/cover-september-11-18-2020.jpg?w=170&q=95&f=87dabb57a32fecfaface1c7cf7a07d1f" alt="">
+        </article>
+        <article class="usa-news px-3">
+            <a href="#" class="text-decoration-none">
+                <h2 class="orange-color mb-2">U.S.</h2>
+            </a>
+            <div class="usa-section-container container-fluid row no-gutters px-0">
+                <section class="featured-stories pb-3 w-100 col-md">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037"
+                                alt="fly rubbing hands evily">
+                        </a>
+                    </div>
+                    <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
+                </section>
+                <section class="featured-stories pb-1 w-100 col-md mx-md-4">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603"
+                                alt="white shark">
+                        </a>
+                    </div>
+                    <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at
+                            beach</a></h2>
+                </section>
+
+                <!-- USA NEWS SMALL PICTURES-->
+
+                <!-- using same classes as for more stories in sections-->
+
+                <div class="usa-small-pic-container w-100 col-md">
+                    <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img class="h-auto flex-shrink-0"
+                                src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b"
+                                alt="guy in suit">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a"
+                                alt="kim jong un">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934"
+                                alt="donald trump">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="border-bottom my-4"></div>
+
+        </article>
+        <article class="usa-news px-3">
+            <a href="#" class="text-decoration-none">
+                <h2 class="orange-color mb-2">U.S.</h2>
+            </a>
+            <div class="usa-section-container container-fluid row no-gutters px-0">
+                <section class="featured-stories pb-3 w-100 col-md">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632125/house-fly.jpg?w=397&h=265&f=e3f0eed9b3d71684f17461d8ff235037"
+                                alt="fly rubbing hands evily">
+                        </a>
+                    </div>
+                    <h2 class="usa-smaller-headline"><a href="#">Hand rubbing fly coming up with evil plan</a></h2>
+                </section>
+                <section class="featured-stories pb-1 w-100 col-md mx-md-4">
+                    <div class="top-featured-story-image-container position-relative">
+                        <a href="#">
+                            <img class="w-100 d-block"
+                                src="https://d.newsweek.com/en/full/1632965/great-white-shark.webp?w=397&h=265&f=80cff4879eef6b699eaab0591a1fd603"
+                                alt="white shark">
+                        </a>
+                    </div>
+                    <h2 class="usa-smaller-headline"><a href="#">White shark pleased with kid's birthday party at
+                            beach</a></h2>
+                </section>
+
+                <!-- USA NEWS SMALL PICTURES-->
+
+                <!-- using same classes as for more stories in sections-->
+
+                <div class="usa-small-pic-container w-100 col-md">
+                    <section class="more-stories pt-3 pt-md-0 px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img class="h-auto flex-shrink-0"
+                                src="https://d.newsweek.com/en/full/1623602/matt-hancock-public-health-england.webp?w=397&h=265&f=8c9d1b315d53059cf23a34157262d82b"
+                                alt="guy in suit">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kevin Spacey look-alike having a hard time since Kevins wrongdoings</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1632733/north-korea-kim-jong-un-typhoon-meeting.webp?w=95&h=95&f=b254c0a7174b4490e7e5cbb274a23a5a"
+                                alt="kim jong un">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Kim Jong-un joins BTS as main vocal</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="opinion-seperator border-bottom my-2"></div>
+                    <section class="more-stories px-md-0 px-0">
+                        <div class="more-stories-pic-description d-flex">
+                            <img src="https://d.newsweek.com/en/full/1627633/donald-trump.webp?w=95&h=95&f=87013d2cc0fe6ae6971a5cad16e04934"
+                                alt="donald trump">
+                            <div class="more-stories-description ml-3">
+                                <h4><a href="#">Trump has been seen doing trumpish things.. again</a></h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </article>
+
+        <div class="px-3">
+            <div class="border-bottom mt-4 mb-5 d-none d-md-block"></div>
+        </div>
+        <div class="thick-seperation-line w-100 border-top d-md-none mt-5 mb-3"></div>
+
+        <!-- NEWSLETTER -->
+
+        <article class="subscribe-newsletter mb-3">
+            <section class="subscribe-container px-3 mb-3">
+                <h3 class="orange-color mb-2 mb-lg-0">SUBSCRIBE</h2>
+                    <div
+                        class="subscribe-box position-relative text-center text-md-left d-flex flex-column justify-content-end justify-content-lg-start p-4 pb-lg-0">
+                        <img class="subscribe-box-pic-1 position-absolute"
+                            src="https://d.newsweek.com/en/full/1628669/cover-september-04-2020.jpg?w=170&q=95&f=1360030f30130d3440859fd318762628"
+                            alt="">
+                        <img class="subscribe-box-pic-2 position-absolute"
+                            src="https://d.newsweek.com/en/full/1631397/cover-september-11-18-2020.jpg?w=170&q=95&f=87dabb57a32fecfaface1c7cf7a07d1f"
+                            alt="">
                         <div class="subscribe-box-text mb-md-5">
                             <h2>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h2>
                             <p class="mt-4 mb-5 my-lg-4">All Access + Weekly Delivery. <br>
                                 Choose A Membership That's Perfect for You!
                             </p>
-                            <a href="#" class="free-sign-up-button orange-bc px-3 py-2 rounded text-center text-white">SUBSCRIBE <i class="fas fa-chevron-right"></i></a>
+                            <a href="#"
+                                class="free-sign-up-button orange-bc px-3 py-2 rounded text-center text-white">SUBSCRIBE
+                                <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                </section>
+            </section>
 
-                <div class="thick-seperation-line w-100 border-top d-md-none my-3"></div>
+            <div class="thick-seperation-line w-100 border-top d-md-none my-3"></div>
 
-                <section class="newsletter-container px-3">
-                    <h3 class="orange-color mt-2 mt-md-4 mb-1 mb-md-0 mt-lg-0">NEWSLETTER</h2>
-                    <div class="newsletter-box text-center d-flex justify-content-center justify-content-md-start align-items-end align-items-md-center align-items-lg-start p-md-0 pr-md-4 border mb-3 pb-3 px-3">
+            <section class="newsletter-container px-3">
+                <h3 class="orange-color mt-2 mt-md-4 mb-1 mb-md-0 mt-lg-0">NEWSLETTER</h2>
+                    <div
+                        class="newsletter-box text-center d-flex justify-content-center justify-content-md-start align-items-end align-items-md-center align-items-lg-start p-md-0 pr-md-4 border mb-3 pb-3 px-3">
                         <div class="newsletter-bg-img flex-shrink-0"></div>
                         <div class="newsletter-box-right text-md-left ml-md-4 mt-lg-4 w-100">
                             <div class="newsletter-box-text">
                                 <h2 class="mb-3">The Starting 5</h2>
-                                <p class="mb-3">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                                <p class="mb-3">See why nearly a quarter of a million subscribers begin their day with
+                                    the Starting 5.</p>
                             </div>
                             <div class="newsletter-mail-sign-up d-flex flex-column w-100">
                                 <input class="newsletter-input mb-2" type="email" placeholder="Email adress">
-                                <a href="#" class="newsletter-button orange-bc px-3 rounded text-center text-white">FREE SIGN UP <i class="fas fa-chevron-right"></i></a>
+                                <a href="#" class="newsletter-button orange-bc px-3 rounded text-center text-white">FREE
+                                    SIGN UP <i class="fas fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
-                </section>
-            </article>
+            </section>
+        </article>
 
-            <div class="thick-seperation-line w-100 border-top d-md-none"></div>
+        <div class="thick-seperation-line w-100 border-top d-md-none"></div>
 
-            <!-- FOOTER -->
+        <!-- FOOTER -->
 
-            <footer class="px-3 py-4">
-                <div class="top-footer d-md-flex justify-content-between align-items-end">
-                    <div class="top-footer-left d-md-flex align-items-end">
-                        <a href="#">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g><path d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path></g></svg>
-                        </a>
-                        <p class="py-2 pb-md-0 ml-md-3">© 2020 Newsweek</p>
-                    </div>
-                    <div class="top-footer-right">
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square mx-2"></i></a>
-                        <a href="#"><i class="fab fa-instagram-square"></i></a>
-                        <a href="#"><i class="fab fa-tumblr-square mx-2"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
+        <footer class="px-3 py-4">
+            <div class="top-footer d-md-flex justify-content-between align-items-end">
+                <div class="top-footer-left d-md-flex align-items-end">
+                    <a href="#">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                            style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+                            <g>
+                                <path
+                                    d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <p class="py-2 pb-md-0 ml-md-3">© 2020 Newsweek</p>
                 </div>
-                <div class="n-icon-headline-container">
-                    <div class="seperation-line border-bottom my-2"></div>
+                <div class="top-footer-right">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square mx-2"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#"><i class="fab fa-tumblr-square mx-2"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <div class="bottom-footer">
-                    <div class="bottom-footer-top d-flex">
-                        <p class="mr-3">Editions:</p>
-                        <ul class="">
-                            <li><a href="#">U.S. Edition</a></li>
-                            <li><a class="mx-4" href="#">日本</a></li>
-                            <li><a href="#">Pakistan</a></li>
-                            <li><a class="mx-4" href="#" >Polska</a></li>
-                            <li><a href="#">România</a></li>
-                        </ul>
-                    </div>
-                    <div class="bottom-footer-bottom">
-                        <ul>
-                            <li class="d-inline mr-3"><a href="#">About Us</a></li>
-                            <li class="d-inline mr-3"><a href="#">Corrections</a></li>
-                            <li class="d-inline mr-3"><a href="#">Contact Us</a></li>
-                            <li class="d-inline mr-3"><a href="#">Editorial Guidelines</a></li>
-                            <li class="d-inline mr-3"><a href="#">Advertise</a></li>
-                            <li class="d-inline mr-3"><a href="#">Copyright</a></li>
-                            <li class="d-inline mr-3"><a href="#">Terms & Conditions</a></li>
-                            <li class="d-inline mr-3"><a href="#">Privacy Policy</a></li>
-                            <li class="d-inline mr-3"><a href="#">Cookie Policy</a></li>
-                            <li class="d-inline mr-3"><a href="#">Terms of Sale</a></li>
-                            <li class="d-inline mr-3"><a href="#">Archive</a></li>
-                            <li class="d-inline mr-3"><a href="#">Announcements</a></li>
-                            <li class="d-inline mr-3"><a href="#">Consent preferences</a></li> 
-                        </ul>
-                    </div>
+            </div>
+            <div class="n-icon-headline-container">
+                <div class="seperation-line border-bottom my-2"></div>
+            </div>
+            <div class="bottom-footer">
+                <div class="bottom-footer-top d-flex">
+                    <p class="mr-3">Editions:</p>
+                    <ul class="">
+                        <li><a href="#">U.S. Edition</a></li>
+                        <li><a class="mx-4" href="#">日本</a></li>
+                        <li><a href="#">Pakistan</a></li>
+                        <li><a class="mx-4" href="#">Polska</a></li>
+                        <li><a href="#">România</a></li>
+                    </ul>
                 </div>
-            </footer>
+                <div class="bottom-footer-bottom">
+                    <ul>
+                        <li class="d-inline mr-3"><a href="#">About Us</a></li>
+                        <li class="d-inline mr-3"><a href="#">Corrections</a></li>
+                        <li class="d-inline mr-3"><a href="#">Contact Us</a></li>
+                        <li class="d-inline mr-3"><a href="#">Editorial Guidelines</a></li>
+                        <li class="d-inline mr-3"><a href="#">Advertise</a></li>
+                        <li class="d-inline mr-3"><a href="#">Copyright</a></li>
+                        <li class="d-inline mr-3"><a href="#">Terms & Conditions</a></li>
+                        <li class="d-inline mr-3"><a href="#">Privacy Policy</a></li>
+                        <li class="d-inline mr-3"><a href="#">Cookie Policy</a></li>
+                        <li class="d-inline mr-3"><a href="#">Terms of Sale</a></li>
+                        <li class="d-inline mr-3"><a href="#">Archive</a></li>
+                        <li class="d-inline mr-3"><a href="#">Announcements</a></li>
+                        <li class="d-inline mr-3"><a href="#">Consent preferences</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
-        </div>
+    </div>
     </div>
 </body>
+
 </html>
