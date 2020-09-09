@@ -59,6 +59,11 @@ input[type="email"] {
   background-color: #bddcfc;
 }
 
+.thick-seperation-line {
+  background-color: #f4f5f6;
+  height: 20px;
+}
+
 /* LINKS */
 
 body h2 a {
@@ -311,6 +316,10 @@ main section {
 
 /* THE DEBATE */
 
+.the-debate {
+  padding-bottom: 32px;
+}
+
 .the-debate-thick-line {
   border-bottom: 4px solid #d9d9d9;
 }
@@ -447,10 +456,6 @@ main section {
 @media only screen and (min-width: 767px) {
 
 /* GLOBAL */
-
-  .md-background-white {
-    background-color: white;
-  }
 
   body h2 {
     font-size: 22px;
