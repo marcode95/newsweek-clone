@@ -64,10 +64,6 @@ input[type="email"] {
   height: 20px;
 }
 
-body section {
-  min-width: 350px;
-}
-
 /* LINKS */
 
 body h2 a,
@@ -454,6 +450,10 @@ main section {
 
   .top-story {
     border-bottom: transparent;
+  }
+
+  .my-turn-container {
+    display: flex;
   }
 
   .more-stories-container {
