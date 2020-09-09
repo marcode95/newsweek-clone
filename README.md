@@ -9,7 +9,7 @@ An HTML and CSS mockup of the homepage of newsweek.com with focus on Bootstrap, 
 
 ## Live demo
 
-🔗 [newsweek Website Clone](https://raw.githack.com/marcode95/newsweek-clone/development/index.html)
+🔗 [newsweek Website Clone](https://rawcdn.githack.com/marcode95/newsweek-clone/1a9eefefa1d01eba5f521dec651c910a12464790/index.html)
 
 ## Built With
 
