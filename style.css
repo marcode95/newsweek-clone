@@ -487,12 +487,8 @@ main section {
     border-bottom: transparent;
   }
 
-  .my-turn section {
-    padding-bottom: 0;
-  }
-
-  .my-turn-cotainer {
-    height: 240px;
+  .my-turn-container {
+    display: flex;
   }
 
   .more-stories-container {
