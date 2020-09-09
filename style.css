@@ -3,7 +3,6 @@
 
 body {
   font-family: 'Roboto Condensed', serif;
-  background-color: #f4f5f6;
 }
 
 * {
@@ -54,6 +53,10 @@ input[type="email"] {
 
 .text-decoration-none {
   text-decoration: none;
+}
+
+.grayish-bg-color {
+  background-color: #bddcfc;
 }
 
 /* LINKS */
@@ -158,6 +161,10 @@ footer a:hover {
 }
 
 /* HEADER */
+
+header {
+  max-width: 1310px;
+}
 
 /* TOP HEADER */
 
@@ -441,7 +448,7 @@ main section {
 
 /* GLOBAL */
 
-  body {
+  .md-background-white {
     background-color: white;
   }
 
