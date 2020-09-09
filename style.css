@@ -60,7 +60,6 @@ input[type="email"] {
 }
 
 .thick-seperation-line {
-  background-color: #f4f5f6;
   height: 20px;
 }
 
@@ -169,7 +168,6 @@ header {
   right: 0;
   width: 67px;
   height: 13px;
-  background: #f72210;
 }
 
 .triangle {
@@ -225,20 +223,9 @@ header {
 main section {
   padding-left: 15px;
   padding-right: 15px;
-  background-color: white;
-}
-
-/* FEATURED STORIES  */
-
-.featured-stories-container {
-  border-bottom: 1px solid lightgrey;
 }
 
 /* TOP STORY */
-
-.top-story {
-  border-bottom: 1px solid lightgray;
-}
 
 .heading-rectangle {
   bottom: 0;
@@ -308,12 +295,6 @@ main section {
   left: 50%;
   transform: translate(-50%, 0%);
   top: 126px;
-}
-
-/* THE DEBATE - OPINION*/
-
-.opinion {
-  padding-bottom: 0;
 }
 
 /* THE DEBATE - SIGN UP*/
@@ -416,9 +397,36 @@ main section {
   color: #666;
 }
 
+.bottom-footer-top ul li {
+  display: inline-block;
+}
+
 /* MEDIA QUERY */
 
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 450px) {
+
+  .subscribe-box {
+    height: 400px;
+  }
+
+  .newsletter-box {
+    height: 230px;
+  }
+
+  .subscribe-box-pic-1 {
+    top: 24px;
+    left: 16%;
+    z-index: 0;
+  }
+  
+  .subscribe-box-pic-2 {
+    top: 38px;
+    left: 24%;
+    z-index: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
 
 /* GLOBAL */
 
@@ -450,10 +458,6 @@ main section {
 
   .top-story {
     border-bottom: transparent;
-  }
-
-  .my-turn-container {
-    display: flex;
   }
 
   .more-stories-container {
