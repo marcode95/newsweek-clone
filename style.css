@@ -425,7 +425,7 @@ main section {
   height: 40px;
 }
 
-/* SUBSCRIBE NEWSLETTER */
+/* FOOTER */
 
 .top-footer-left svg {
   width: 236px;
@@ -493,7 +493,21 @@ main section {
     border-bottom: transparent;
   }
 
-  /* SUBSCRIBE NEWSLETTER */
+/* MAGAZINE/EDITORS PICK */
+
+  .in-the-magazine-description {
+    font-size: 20px;
+  }
+
+  .editors-pick-container h2 {
+    font-size: 24px;
+  }
+
+  .editors-pick-container p {
+    font-size: 15px;
+  }
+
+/* SUBSCRIBE NEWSLETTER */
 
   .subscribe-box {
     height: 300px;
